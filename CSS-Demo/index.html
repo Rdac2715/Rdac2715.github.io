@@ -6,94 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Demo</title>
-    <style>
-        body {
-            background-color: rgb(255, 159, 196);
-        }
-        
-        p {
-            color: rgb(0, 255, 42)
-        }
-        
-        #red-text {
-            color: red;
-        }
-        
-        #blue-text {
-            color: blue
-        }
-        
-        .small-text {
-            font-size: small;
-        }
-        
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-        
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Some HTML stuff first</h1>
-    <ul>
-        <li>Apples</li>
-        <li>Oranges</li>
-        <li>Durians</li>
-    </ul>
+    <div class="container">
+        <div class="top">
+            <table>
+                <tr class="nav"></tr>
+                <tr style="text-align: center;">
+                    <th>
+                        <button><a href="index.html">Home</a></button>
+                        <button><a href="about.html">About</a></button>
+                    </th>
+                </tr>
+            </table>
+        </div>
 
-    <ol>
-        <li>Carrots</li>
-        <li>Spinich</li>
-        <li>Cauliflower</li>
-    </ol>
+        <h1>Some HTML stuff first</h1>
+        <ul>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Durians</li>
+        </ul>
 
-    <table>
-        <tr>
-            <th>Fruits</th>
-            <th>Vegtables</th>
-            <th>Basically Both</th>
-        </tr>
-        <tr>
-            <td>Tomato</td>
-            <td>Potato</td>
-            <td>Pumpkin</td>
-        </tr>
-        <tr>
-            <td>Strawberry</td>
-            <td>Carrot</td>
-            <td>Squash</td>
-        </tr>
-        <tr>
-            <td>Apple</td>
-            <td>Kale</td>
-            <td>Watermelon</td>
-        </tr>
+        <ol>
+            <li>Carrots</li>
+            <li>Spinich</li>
+            <li>Cauliflower</li>
+        </ol>
 
-    </table>
+        <table>
+            <tr>
+                <th>Fruits</th>
+                <th>Vegtables</th>
+                <th>Basically Both</th>
+            </tr>
+            <tr>
+                <td>Tomato</td>
+                <td>Potato</td>
+                <td>Pumpkin</td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>Carrot</td>
+                <td>Squash</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Kale</td>
+                <td>Watermelon</td>
+            </tr>
 
-    <h2>Let's o some internal CSS!</h2>
-    <p style="color:blue">I want this text to be blue</p>
-    <p style="color:red">I want this text to be red</p>
-    <p style="font-size:50px">I want this text to be really big</p>
-    <p>Hint: Zoom In</p>
-    <p style="font-size:1px">I want this text to be really small</p>
-    <p style="font-size:24px; color:orange; text-align: center;">I want this text to be orange, 24px, and centered</p>
+        </table>
 
-    <h2>Lets do some internal CSS with selectors</h2>
-    <p id="blue-text">blue</p>
-    <p id="red-text">red</p>
-    <p class="small-text">small</p>
-    <p class="small-text">small</p>
-    <p>orange</p>
+        <h2>Let's do some internal CSS!</h2>
+        <p style="color:blue;"> want this text to be blue </p>
+        <p style="color:red;">I want this text to be red</p>
+        <p style="font-size:50px;">I want this text to be really big</p>
+        <p>Hint: Zoom In</p>
+        <p style="font-size:1px">I want this text to be really small</p>
+        <p style="font-size:24px; color:orange; text-align: center;">I want this text to be orange, 24px, and centered</p>
+
+        <h2>Lets do some internal CSS with selectors</h2>
+        <p id="blue-text">blue</p>
+        <p id="red-text">red</p>
+        <p class="small-text">small</p>
+        <p class="small-text">small</p>
+        <p>orange</p>
+    </div>
 </body>
 
 </html>

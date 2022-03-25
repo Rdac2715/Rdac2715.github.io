@@ -1,0 +1,23 @@
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: white;
+}
+
+button {
+    border: none;
+    background-color: wheat;
+    color: white;
+    font-family: Arial;
+}
+
+button:hover {
+    background-color: #af634c;
+    color: white;
+}
+
+.top {
+    background-color: wheat;
+}

@@ -1,0 +1,35 @@
+.h1 {
+    color: rgb(220, 154, 113);
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: rgb(42, 67, 87)
+}
+
+button {
+    border: none;
+    background-color: wheat;
+    color: white;
+    font-family: Arial;
+}
+
+button:hover {
+    background-color: #af634c;
+    color: white;
+}
+
+.top {
+    background-color: wheat;
+}
+
+.photo {
+    text-align: center;
+}
+
+.text {
+    color: 233, 186, 124;
+}

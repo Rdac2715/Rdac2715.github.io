@@ -8,18 +8,18 @@
 
 button {
     border: none;
-    background-color: wheat;
+    background-color: rgb(254, 145, 99);
     color: white;
     font-family: Arial;
 }
 
 button:hover {
-    background-color: #af634c;
+    background-color: #ff3c00;
     color: white;
 }
 
 .top {
-    background-color: wheat;
+    background-color: rgb(254, 145, 99);
 }
 
 .photo {

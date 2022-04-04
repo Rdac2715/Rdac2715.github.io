@@ -1,0 +1,27 @@
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    border: 4px ridge black;
+    padding: 50px;
+    background-color: rgb(241, 231, 186);
+}
+
+button {
+    border: none;
+    background-color: wheat;
+    color: white;
+    font-family: Arial;
+}
+
+button:hover {
+    background-color: #af634c;
+    color: white;
+}
+
+.top {
+    background-color: wheat;
+}
+
+.photo {
+    text-align: center;
+}

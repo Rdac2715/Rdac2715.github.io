@@ -4,18 +4,20 @@
     border: 4px ridge black;
     padding: 50px;
     background-color: rgb(241, 231, 186);
+    font-family: 'Verdana'
 }
 
 button {
     border: none;
     background-color: rgb(254, 145, 99);
     color: white;
-    font-family: Arial;
+    font-family: 'Verdana'
 }
 
 button:hover {
     background-color: #ff3c00;
     color: white;
+    font-family: 'Verdana'
 }
 
 .top {
@@ -24,4 +26,10 @@ button:hover {
 
 .photo {
     text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Let's learn JavaScript</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://www.eastsideprep.org" target="_blank" onclick="alert('leaving the webpage')">go to my school's website</a>
+    <p></p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" onclick="alert('Get trolled')">Other school resoruces</a>
+    <h2>How do I change HTML</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Super Cooper'; document.getElementById(secret).style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>Which is the lie?</h2>
+    <p id="lies"></p>
+
+    <ol>
+        <p>
+            I have never had a concussion
+        </p>
+        <p>
+            I am allergic to cats
+        </p>
+        <p>
+            I have my drivers license
+        </p>
+    </ol>
+    <button onclick="document.getElementById('lies').innerHTML='Wrong'; document.getElementById(secret).style.display='block'">Option 1</button>
+    <button onclick="document.getElementById('lies').innerHTML='Correct'; document.getElementById(secret).style.display='block'">Option 2</button>
+    <button onclick="document.getElementById('lies').innerHTML='Wrong'; document.getElementById(secret).style.display='block'">Option 3</button>
+
+    <h2>Don't flick the switch... it could be dangerous!</h2>
+    <img src="images/switch-off.png" alt="off switch" id="switch">
+    <br>
+    <button onclick="document.getElementById('switch').src='images/switch-on.png' ">dont click me</button>
+    <button onclick="document.getElementById('switch').src='images/switch-off.png' ">undo</button>
+
+    <h2>How do we hange css styles with functions?</h2>
+    <p id="alice">Hi. I am Alice</p>
+    <button onclick="shrinkAlice()">Cake: eat me and I may die. please don't...</button>
+    <button onclick="growAlice()">Ominious Potion: Drink me \(o_o)/</button>
+
+    <script>
+        function shrinkAlice() {
+            let alice = document.getElementById('alice');
+            alice.style.color = 'blue'
+            alice.style.fontSize = '10px'
+        }
+
+        function growAlice() {
+            let alice = document.getElementById('alice');
+            alice.style.color = 'red'
+            alice.style.fontSize = '50px'
+        }
+    </script>
+</body>
+
+</html>

@@ -49,6 +49,15 @@
     <button onclick="shrinkAlice()">Cake: eat me and I may die. please don't...</button>
     <button onclick="growAlice()">Ominious Potion: Drink me \(o_o)/</button>
 
+    <p>new stuff below </p>
+
+    <p id="colors"></p>
+    <button onclick="colors()">I wonder what will happen if you click me?</button>
+    <p style="color: rgb(255, 255, 255);">When will you learn? Your actions have consequences</p>
+    <br>
+    <button name="crazy" onclick="crazynumber()">Click for Number</button>
+
+    <div id="number"></div>
     <script>
         function shrinkAlice() {
             let alice = document.getElementById('alice');
@@ -60,6 +69,17 @@
             let alice = document.getElementById('alice');
             alice.style.color = 'red'
             alice.style.fontSize = '50px'
+        }
+
+        function colors() {
+            document.body.style.background = 'red';
+        }
+
+        function crazynumber() {
+            var randomNumberObject = Math.floor(Math.random() * 999999999999999999);
+            document.getElementById("number").innerHTML = randomNumberObject;
+            number.style.fontSize = '50px';
+
         }
     </script>
 </body>

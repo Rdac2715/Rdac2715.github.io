@@ -8,71 +8,7 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .navbar {
-            overflow: hidden;
-            background-color: rgb(217, 188, 138);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .navbar a {
-            float: left;
-            font-size: 16px;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-        
-        .dropdown .dropbtn {
-            cursor: pointer;
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: rgb(0, 0, 0);
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-        
-        .navbar a:hover,
-        .dropdown:hover .dropbtn,
-        .dropbtn:focus {
-            background-color: red;
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: rgb(217, 188, 138);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-        
-        .show {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/lnk7rhg.css">
 </head>
 
 <body>
@@ -92,8 +28,25 @@
             </div>
         </div>
         <a href="encyclopedia.html">Encyclopedia</a>
-    </div>
 
+        <div class="navbar2">
+            <div class="dropdown2">
+                <button class="dropbtn2" onclick="myFunction2()">More
+            <i class="fa fa-caret-down"></i>
+          </button>
+                <div class="dropdown-content2" id="myDropdown2">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="events.html">Events</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <h1>EcoLearning Together </h1>
+        <h2>Everyone can be involved in environmentalism.</h2>
+        <b style="font-size: 20px;">Build your Ecosystem of educational change. Education and Protection of Ecosystems are key to our Earth. EcoLearners works to make sure our ecosystems can survive through hands-on action and education. Get involved now.</b>
+    </div>
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -104,6 +57,19 @@
                 var myDropdown = document.getElementById("myDropdown");
                 if (myDropdown.classList.contains('show')) {
                     myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn2')) {
+                var myDropdown = document.getElementById("myDropdown2");
+                if (myDropdown.classList.contains('show2')) {
+                    myDropdown.classList.remove('show2');
                 }
             }
         }

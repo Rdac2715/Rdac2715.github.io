@@ -6,6 +6,7 @@
     font-family: dair-67, serif;
     font-weight: 400;
     font-style: normal;
+    color: green;
 }
 
 .navbar a {
@@ -26,6 +27,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
+    color: green;
 }
 
 .dropdown .dropbtn {
@@ -165,7 +167,7 @@ html {
 
 .navbar3 {
     overflow: hidden;
-    background-color: orange(217, 188, 138);
+    background-color: green(217, 188, 138);
     font-family: Arial, Helvetica, sans-serif;
     border: 2px;
     font-family: dair-67, serif;
@@ -195,12 +197,12 @@ html {
 .navbar3 a:hover,
 .dropdown:hover .dropbtn,
 .dropbtn:focus {
-    background-color: orange;
+    background-color: green;
 }
 
 .img {
-    width: 400px;
-    height: 200px;
+    width: max-content 300px;
+    height: min-content 150px;
 }
 
 .container {

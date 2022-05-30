@@ -16,37 +16,62 @@
             display: grid;
             grid-template-columns: auto auto auto;
             grid-gap: 10px;
-        }
-        
-        .grid-item {
-            text-align: center;
-            font-size: 16px;
             padding: 20px;
         }
         
+        .grid-item {
+            text-align: left;
+            font-size: 20px;
+        }
+        
         .main1 {
-            grid-column: 1 / span 2;
+            grid-column: 1 / span 3;
             grid-row: 1;
         }
         
-        .main2 {
-            grid-column: 3 / span 2;
+        .image1 {
+            grid-column: 4 / span 1;
+            grid-row: 1;
+        }
+        
+        .image2 {
+            grid-column: 1 / span 5;
             grid-row: 2;
         }
         
-        .main3 {
+        .main2 {
+            grid-column: 2 / span 3;
+            grid-row: 3;
+        }
+        
+        .image3 {
             grid-column: 1 / span 2;
             grid-row: 3;
         }
         
+        .main3 {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        
         .main4 {
             grid-column: 3 / span 2;
-            grid-row: 4;
+            grid-row: 5;
+        }
+        
+        .image4 {
+            grid-column: 4 / span 1;
+            grid-row: 2;
+        }
+        
+        .image6 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
         }
         
         .main5 {
             grid-column: 1 / span 2;
-            grid-row: 5;
+            grid-row: 6;
         }
         
         .mySlides {
@@ -92,7 +117,7 @@
         <a href="encyclopedia.html">Encyclopedia</a>
         <div class="navbar2">
             <div class="dropdown2">
-                <button class="dropbtn2" onclick="myFunction2()">More
+                <button class="dropbtn2" onclick="myFunction2()">More...
             <i class="fa fa-caret-down"></i>
           </button>
                 <div class="dropdown-content2" id="myDropdown2">
@@ -104,47 +129,63 @@
     </div>
 
     <div class="center">
-        <h1>EcoLearning Together </h1>
-        <h2>Everyone can be involved in environmentalism.</h2>
-        <b style="font-size: 20px;">Build your Ecosystem of educational change. Education and Protection of Ecosystems are key to our Earth. EcoLearners works to make sure our ecosystems can survive through hands-on action and education. Get involved now.</b>
+        <h1 style="font-size: 60px;">EcoLearning Together </h1>
+    </div>
+    <h2 style="text-align: center;">Everyone can be involved in environmentalism</h2>
+    <div class="center">
+        <p style="font-size: 20px;">Build your Ecosystem of educational change. Education and Protection of Ecosystems are key to our Earth. EcoLearners works to make sure our ecosystems can survive through hands-on action and education.</p>
+        <p style="font-size: 20px;"> Get involved now!</p>
     </div>
     <div class="navbar3">
-        <a href="#section1">About us</a>
+        <a href="#section1">About Us</a>
         <a href="#section2">Our Team</a>
         <a href="#section3">Resources</a>
         <a href="#section4">Videos</a>
         <a href="#section5">Images</a>
     </div>
-
+    <h3 style="text-align: center;">Don't know where to start? Click one of the buttons above!</h3>
     <div class="grid-container">
         <div id="section1"></div>
         <div class="grid-item main1">
             <h1 style="color: green;">About us</h1>
             <br>
-            <p>We are a youth-led organization dedicated to protecting ecosystems by working with students throughout the world to ecolearn and rebuild ecosystems. With our collective knowledge, we can protect the Earth for generations to come!</p>
+            <p>We are a youth-led organization dedicated to protecting ecosystems by working with students throughout the world to ecolearn and rebuild ecosystems. With our collective knowledge, we can protect the Earth for generations to come.</p>
+        </div>
+        <div class="grid-item image1">
+            <img style="padding-right: 20px;" src="../images/Capture.PNG" alt="Logo" width="400px" height="330px">
+        </div>
+        <div class="grid-item image2">
+            <img src="../images/photo2.PNG" alt="Logo" width="1250px" height="400px">
         </div>
         <div id="section2"></div>
+
         <div class="grid-item main2">
             <h1 style="color: orange;">Our Team</h1>
             <br>
-            <p>Our team consists of young students wanting to make a difference in our world. Our founders are from Kirkland, Washington and are highschoolers. Look below to learn more about us and how it all came together.</p>
+            <p>Our team consists of young students wanting to make a difference in our world. Our founders are from Kirkland, Washington and are high schoolers. Look below to learn more about us and how it all came together.</p>
 
+        </div>
+
+        <div class="grid-item image3">
+            <img src="../images/logo3.png" alt="logo3" width="200px" height="300px">
         </div>
         <div class="grid-item main3">
             <div id="section3"></div>
 
             <h1 style="color: green;">Resources</h1>
             <br>
-            <p>Impact your community and make a local difference. Chapters are a great way to make sure YOUR ecosystems are protected. Starting a chapter is similar to starting your own organization, and you get to decide what YOU want to do! You also get
+            <p>Impact your community and make a local difference. Chapters are a great way to make sure YOUR ecosystems are protected. Starting a chapter is similar to starting your own organization, and you get to decide what YOU want to do. You also get
                 volunteer hours!
             </p>
             <br>
-            <p> Through the chapter system, you get to brainstorm and host your own events, local biodiversity restorations, working with legislators, and working with youth at schools! You also can also plan things such as newsletters and more! It's all
-                up to you! Create your own chapter or join one -- its easy! View more to the right!</p>
+            <p> Through the chapter system, you get to brainstorm and host your own events, local biodiversity restorations, working with legislators, and working with youth at schools. You also can also plan things such as newsletters and more. It's all
+                up to you. Create your own chapter or join one, its easy! View more down below.</p>
 
 
         </div>
-
+        <div class="grid-item image5">
+            <img src="../images/logo4.png" alt="logo3" width="300px" height="300px">
+        </div>
         <div class="grid-item main4">
             <div id="section4"></div>
             <h1 style="color: orange;">Videos</h1>
@@ -174,18 +215,22 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/2IG0PZw8-Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
 
         </div>
-
-
-
+        <div class="image6">
+            <img src="../images/photo3.png" alt="logo5" width="500px" height="400px">
+        </div>
     </div>
-
 
     <div class="grid-item main5">
         <div id="section5"></div>
-        <h1 style="color: green;">Images</h1>
-        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <h1 style="color: green; padding-left: 250px;">Images</h1>
+        <div style="padding-left: 80px;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div style="padding-right: 700px;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
         <br>
+        <br>
+
+        <!--button gets moved when clicking-->
+        <!--button gets moved when clicking-->
+        <!--button gets moved when clicking-->
 
         <div class="img">
             <div class="w3-container">

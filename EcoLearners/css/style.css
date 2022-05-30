@@ -1,12 +1,13 @@
 .navbar {
     overflow: hidden;
-    background-color: rgb(217, 188, 138);
+    background-color: rgb(185, 157, 105);
     font-family: Arial, Helvetica, sans-serif;
     border: 2px;
     font-family: dair-67, serif;
     font-weight: 400;
     font-style: normal;
     color: green;
+    padding-left: 300px;
 }
 
 .navbar a {
@@ -16,6 +17,7 @@
     text-align: center;
     padding: 14px 25px;
     text-decoration: none;
+    display: block;
 }
 
 .navbar a:hover,
@@ -76,7 +78,7 @@
 
 .navbar2 {
     overflow: hidden;
-    background-color: rgb(217, 188, 138);
+    background-color: rgb(185, 157, 105);
     font-family: Arial, Helvetica, sans-serif;
     border: 2px;
     font-family: dair-67, serif;
@@ -150,9 +152,8 @@
 
 .center {
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    font-size: larger;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 body {
@@ -173,6 +174,7 @@ html {
     font-family: dair-67, serif;
     font-weight: 400;
     font-style: normal;
+    padding-left: 300px;
 }
 
 .navbar3 {
@@ -195,9 +197,9 @@ html {
 }
 
 .navbar3 a:hover,
-.dropdown:hover .dropbtn,
-.dropbtn:focus {
-    background-color: green;
+.dropdown3:hover .dropbtn3,
+.dropbtn3:focus {
+    background-color: orange;
 }
 
 .img {

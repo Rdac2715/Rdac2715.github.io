@@ -9,9 +9,94 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lnk7rhg.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        
+        .grid-item {
+            text-align: left;
+            font-size: 20px;
+        }
+        
+        .main1 {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+        }
+        
+        .image1 {
+            grid-column: 4 / span 1;
+            grid-row: 1;
+        }
+        
+        .image2 {
+            grid-column: 1 / span 5;
+            grid-row: 2;
+        }
+        
+        .main2 {
+            grid-column: 2 / span 3;
+            grid-row: 3;
+        }
+        
+        .image3 {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+        
+        .main3 {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        
+        .main4 {
+            grid-column: 3 / span 2;
+            grid-row: 5;
+        }
+        
+        .image4 {
+            grid-column: 4 / span 1;
+            grid-row: 2;
+        }
+        
+        .image6 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+        }
+        
+        .main5 {
+            grid-column: 1 / span 2;
+            grid-row: 6;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .mySlides2 {
+            display: none
+        }
+        
+        .w3-left,
+        .w3-right,
+        .w3-badge {
+            cursor: pointer
+        }
+        
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color:rgb(249, 217, 162);">
 
     <div class="navbar">
         <a href="index.html">Home</a>
@@ -27,49 +112,135 @@
                 <a href="Dingbats.html">Dingbats Books</a>
             </div>
         </div>
-        <a href="encyclopedia.html">Encyclopedia</a>
 
+
+        <a href="encyclopedia.html">Encyclopedia</a>
         <div class="navbar2">
             <div class="dropdown2">
-                <button class="dropbtn2" onclick="myFunction2()">More
+                <button class="dropbtn2" onclick="myFunction2()">More...
             <i class="fa fa-caret-down"></i>
           </button>
                 <div class="dropdown-content2" id="myDropdown2">
                     <a href="contact.html">Contact Us</a>
                     <a href="events.html">Events</a>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
+    <div class="center">
+        <h1 style="font-size: 60px;">EcoLearning Together </h1>
+    </div>
+    <h2 style="text-align: center;">Everyone can be involved in environmentalism</h2>
+    <div class="center">
+        <p style="font-size: 20px;">Build your Ecosystem of educational change. Education and Protection of Ecosystems are key to our Earth. EcoLearners works to make sure our ecosystems can survive through hands-on action and education.</p>
+        <p style="font-size: 20px;"> Get involved now!</p>
+    </div>
 
-        window.onclick = function(e) {
-            if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
+    <div class="grid-container">
+        <div class="grid-item main1">
+            <h4>A lightweight tote with a classic EcoLearners plant logo on it. The bag is perfect for carrying items anytime or anywhere you need them.</h4>
+            <br>
+            <h4> Dimensions: 13.5 inch x 13.5 in x 4 in</h4>
+            <br>
+            <h4>Price: $26 including shipping</h4>
+
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YN6K83A4CTE26">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        <div class="grid-item image1">
+            <div class="img">
+                <div class="w3-container">
+                    <div class="w3-content w3-display-container">
+                        <div class="mySlides">
+                            <img src="../images/merch1.PNG" width="560" height="315"> </div>
+                        <div class="mySlides">
+                            <img src="../images/merch2.PNG" width="560" height="315"> </div>
+                        <div class="mySlides">
+                            <img src="../images/merch3.PNG" width="560" height="315"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
                 }
             }
-        }
 
-        function myFunction2() {
-            document.getElementById("myDropdown2").classList.toggle("show2");
-        }
+            function myFunction2() {
+                document.getElementById("myDropdown2").classList.toggle("show2");
+            }
 
-        window.onclick = function(e) {
-            if (!e.target.matches('.dropbtn2')) {
-                var myDropdown = document.getElementById("myDropdown2");
-                if (myDropdown.classList.contains('show2')) {
-                    myDropdown.classList.remove('show2');
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn2')) {
+                    var myDropdown = document.getElementById("myDropdown2");
+                    if (myDropdown.classList.contains('show2')) {
+                        myDropdown.classList.remove('show2');
+                    }
                 }
             }
-        }
-    </script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides2");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
+            }
+        </script>
+    </div>
 </body>
 
 </html>

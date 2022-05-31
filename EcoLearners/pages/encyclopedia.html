@@ -99,8 +99,7 @@
     </style>
 </head>
 
-<body style="background-color:rgb(255, 242, 221);">
-
+<body style="background-color:rgb(255, 224, 173);">
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="merch.html">Merch</a>
@@ -163,88 +162,87 @@
             <h3>Veganism</h3>
             <p>Lifestyle that avoids any animal based product for eating or usage (this includes dairy, honey, fish, and meats)</p>
         </div>
-    </div>
-    <div class="image1">
-        <img src="../images/photo3.png" alt="Logo 3" width="600px" height="500px">
-    </div>
-    <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
+        <div class="image1">
+            <img src="../images/photo3.png" alt="Logo 3" width="600px" height="500px">
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
-        window.onclick = function(e) {
-            if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
                 }
             }
-        }
 
-        function myFunction2() {
-            document.getElementById("myDropdown2").classList.toggle("show2");
-        }
+            function myFunction2() {
+                document.getElementById("myDropdown2").classList.toggle("show2");
+            }
 
-        window.onclick = function(e) {
-            if (!e.target.matches('.dropbtn2')) {
-                var myDropdown = document.getElementById("myDropdown2");
-                if (myDropdown.classList.contains('show2')) {
-                    myDropdown.classList.remove('show2');
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn2')) {
+                    var myDropdown = document.getElementById("myDropdown2");
+                    if (myDropdown.classList.contains('show2')) {
+                        myDropdown.classList.remove('show2');
+                    }
                 }
             }
-        }
-        var myIndex = 0;
-        carousel();
+            var myIndex = 0;
+            carousel();
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 5000); // Change image every 2 seconds
             }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 5000); // Change image every 2 seconds
-        }
-        var slideIndex = 1;
-        showDivs(slideIndex);
+            var slideIndex = 1;
+            showDivs(slideIndex);
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
 
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides2");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {
-                slideIndex = 1
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides2");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
             }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-    </script>
-    <br>
-    <footer>
-        <ul>EcoLearning Together.</ul>
-        <ul>EcoLearning Together is a 501c3 tax-exempt organization with the EIN of 87-2969633.</ul>
-    </footer>
+        </script>
+        <br>
+        <footer>
+            <ul>EcoLearning Together.</ul>
+            <ul>EcoLearning Together is a 501c3 tax-exempt organization with the EIN of 87-2969633.</ul>
+        </footer>
 </body>
 
 </html>

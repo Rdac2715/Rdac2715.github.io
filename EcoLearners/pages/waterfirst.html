@@ -17,6 +17,9 @@
             grid-template-columns: auto auto auto;
             grid-gap: 10px;
             padding: 20px;
+            font-family: dair, serif;
+            font-weight: 400;
+            font-style: normal;
         }
         
         .grid-item {
@@ -24,53 +27,63 @@
             font-size: 20px;
         }
         
+        .title {
+            grid-column: 1 / span 13;
+            grid-row: 1;
+        }
+        
         .main1 {
-            grid-column: 1 / span 3;
-            grid-row: 1;
+            grid-column: 2 / span 2;
+            grid-row: 2;
+            color: orange;
         }
         
-        .image1 {
-            grid-column: 4 / span 1;
-            grid-row: 1;
-        }
-        
-        .image2 {
-            grid-column: 1 / span 5;
+        .side1 {
+            grid-column: 5 / span 6;
             grid-row: 2;
         }
         
         .main2 {
-            grid-column: 2 / span 3;
+            grid-column: 2 / span 2;
             grid-row: 3;
+            color: green;
         }
         
-        .image3 {
-            grid-column: 1 / span 2;
+        .side2 {
+            grid-column: 5 / span 6;
             grid-row: 3;
         }
         
         .main3 {
-            grid-column: 1 / span 3;
+            grid-column: 2 / span 2;
+            grid-row: 4;
+            color: orange;
+        }
+        
+        .side3 {
+            grid-column: 5 / span 6;
             grid-row: 4;
         }
         
         .main4 {
-            grid-column: 3 / span 2;
+            grid-column: 2 / span 2;
             grid-row: 5;
+            color: green;
         }
         
-        .image4 {
-            grid-column: 4 / span 1;
-            grid-row: 2;
-        }
-        
-        .image6 {
-            grid-column: 1 / span 2;
+        .side4 {
+            grid-column: 5 / span 6;
             grid-row: 5;
         }
         
         .main5 {
-            grid-column: 1 / span 2;
+            grid-column: 2 / span 2;
+            grid-row: 6;
+            color: orange;
+        }
+        
+        .side5 {
+            grid-column: 5 / span 6;
             grid-row: 6;
         }
         
@@ -136,149 +149,75 @@
         <p style="font-size: 20px;">Build your Ecosystem of educational change. Education and Protection of Ecosystems are key to our Earth. EcoLearners works to make sure our ecosystems can survive through hands-on action and education.</p>
         <p style="font-size: 20px;"> Get involved now!</p>
     </div>
-    <div class="navbar3">
-        <a href="#section1">About Us</a>
-        <a href="#section2">Our Team</a>
-        <a href="#section3">Resources</a>
-        <a href="#section4">Videos</a>
-        <a href="#section5">Images</a>
-    </div>
-    <h3 style="text-align: center;">Don't know where to start? Click one of the buttons above!</h3>
+
     <div class="grid-container">
-        <div id="section1"></div>
+        <div class="grid-item title">
+            <img src="../images/Water1st.PNG" alt="Water1st Logo">
+            <h1>People Without Clean Water Need Smart Investments</h1>
+        </div>
         <div class="grid-item main1">
-            <h1 style="color: green;">About us</h1>
-            <br>
-            <p>We are a youth-led organization dedicated to protecting ecosystems by working with students throughout the world to ecolearn and rebuild ecosystems. With our collective knowledge, we can protect the Earth for generations to come!</p>
+            <h1>The Problem
+            </h1>
         </div>
-        <div class="grid-item image1">
-            <img style="padding-right: 20px;" src="../images/Capture.PNG" alt="Logo" width="400px" height="330px">
+        <div class="grid-item side1">
+            <p>In remote and impoverished communities around the world, I’ve heard new water systems described as a dream come true, winning the lottery, and God touching the Earth. There is no under-estimating the significance of the end to the all-consuming
+                daily walk for water. </p>
+
+            <ol>
+                <li>
+                    Over 2 billion people still lack access to water that is safe to drink.
+                </li>
+                <li>
+                    Nearly 1 million people, mainly children under the age of 5, die each year from diarrhea
+                </li>
+                <li>
+                    It is estimated that the world’s poorest households collectively spend $30 billion dollars annually on the treatment of preventable, water-related diseases.
+                </li>
+                <li>
+                    About 100 million children worldwide, mostly girls, receive no education at all because they are expected to carry water.
+                </li>
+            </ol>
+            <p>With 30% of the world’s population in need of clean, convenient water systems, there exists a tremendous opportunity for donors to have an impact on the lives of the world’s poorest people. But this is an issue that doesn’t just need greater
+                investment, it needs smarter investment.</p>
+            <p>Unfortunately, water projects serving low-income households do not have a good track record. It is estimated that 35-50% of projects stop functioning within just two to five years of completion. There are many reasons that water projects fail,
+                none of which are the ill-intentions of the organizations who build them. But the fact that this rate of failure has been unwavering for over thirty years, means that good intentions need to be backed by data and a commitment to quality
+                control for the world’s poorest people. In the water sector, the all-too-familiar and incomplete solution looks like the installation of a community handpump or home water filters. Water flowing from a household faucet is very uncommon,
+                especially in rural, sub-Saharan Africa where the suffering associated with water collection is arguably the worst. Less than 10% of rural households in Africa have piped water on their premises. In Mozambique, I estimate it is less than
+                2%. But handpumps are ubiquitous. There are more than a million of them on the African continent, and easily half are broken.</p>
+            <p>In 2019, I attended the World Water Week conference in Stockholm, where one study of (mainly) handpump systems serving over one million people in five African countries, demonstrated that user fees covered just 25% of long-term operation and
+                maintenance costs, which might explain why so many pumps are not repaired when they stop working. An insufficient fee structure sheds light on a couple of issues: one, that user fees were not established based on data-driven research,
+                and, two, that users did not feel like they were getting a level of service worth paying for.</p>
         </div>
-        <div class="grid-item image2">
-            <img src="../images/photo2.PNG" alt="Logo" width="1250px" height="400px">
-        </div>
-        <div id="section2"></div>
-
-
-        <!--Section 2 tag does not scroll to correct location-->
-        <!--Section 2 tag does not scroll to correct location-->
-        <!--Section 2 tag does not scroll to correct location-->
-
-
         <div class="grid-item main2">
-            <h1 style="color: orange;">Our Team</h1>
-            <br>
-            <p>Our team consists of young students wanting to make a difference in our world. Our founders are from Kirkland, Washington and are highschoolers. Look below to learn more about us and how it all came together.</p>
-
+            <h1>Experiences</h1>
         </div>
-
-        <div class="grid-item image3">
-            <img src="../images/logo3.png" alt="logo3" width="200px" height="300px">
+        <div class="grid-item side2">
+            <p>A users’ unwillingness to pay for operation and maintenance costs of a water system does not reflect my personal experience over the past 25 years. I have consistently found that when people have a high-quality water service, they will do
+                everything to take care of it, and pay the full costs of maintenance. A high level of water service looks very similar to the public utility serving your home, with 24/7 piped water to every single household; with a water meter installed
+                at the home and a monthly water bill that supports the long-term maintenance of a system; with trained community members who manage their own system in perpetuity.</p>
+            <p>When water is available in the home, families experience a complete solution that includes a kitchen faucet, a toilet, and a shower. Not to mention, a cup of coffee, as Maria, a 78-year-old grandmother from Las Canadas, Honduras reminded me
+                last year, “Now I begin my day with a cup of coffee rather than a walk for water.” Piped water ends the walk for water.</p>
         </div>
         <div class="grid-item main3">
-            <div id="section3"></div>
-
-            <h1 style="color: green;">Resources</h1>
-            <br>
-            <p>Impact your community and make a local difference. Chapters are a great way to make sure YOUR ecosystems are protected. Starting a chapter is similar to starting your own organization, and you get to decide what YOU want to do! You also get
-                volunteer hours!
-            </p>
-            <br>
-            <p> Through the chapter system, you get to brainstorm and host your own events, local biodiversity restorations, working with legislators, and working with youth at schools! You also can also plan things such as newsletters and more! It's all
-                up to you! Create your own chapter or join one, its easy! View more down below!</p>
-
-
+            <h1>The Role of Donors</h1>
         </div>
-        <div class="grid-item image5">
-            <img src="../images/logo4.png" alt="logo3" width="300px" height="300px">
-        </div>
-        <div class="grid-item main4">
-            <div id="section4"></div>
-            <h1 style="color: orange;">Videos</h1>
-            <br> Learning about Ecosystems is key to protecting them. That's why we spread education while rebuilding through our events.
+        <div class="grid-item side3">
+            <p>Donors have an important role to play in changing the status quo for the over 2 billion people stranded in extreme poverty, by not only carefully researching where they choose to invest, but by advocating for poor people without a voice. When
+                donors demand that the water sector provide only the highest quality complete solutions, together, we will end the global water crisis. This has never been more true than in 2020. The coronavirus pandemic has thrown a new light onto existing
+                water security issues. Cases are surging in countries where water is not available for hand-washing.</p>
+            <p> The highest quality solutions might not be the least expensive, but this is not the time for bargain shopping. In the water sector, we need to move away from using cost/person to measure impact and instead invest in programs and projects that
+                meet quantity and quality standards and have proven they are sustainable over the long-term. Up to $10 billion dollars are wasted annually as a result of poor investment decisions. If this funding were redirected to piped water systems,
+                we could cover Sub-Saharan Africa in less than 20 years.</p>
+            <p> If only the highest-quality services are good enough for us, why aren’t they equally good for the home of a peasant farmer or a migrant in living in the urban slum settlements. When we make smart investments up-front in the water sector, we
+                set communities up to address other development needs. Once water is no longer the all-consuming focus of the day, girls can attend school, women can earn an income, and families can move beyond the grips of extreme poverty.</p>
+            <p>Water is the foundation. Let’s get it right the first time.</p>
 
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1pFCIPK4jcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k0ULFHYumzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NUgjp4Ek6D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zGkeXuY57oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hnydUunWIVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qzVA_G1BPa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UgwXUPnwWZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MBwgfUdDZCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/x7_Xg7bKdn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pNa19YrENzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2IG0PZw8-Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <p>by Marla Smith-Nilson</p>
+            <p>Founder and Executive Director </p>
+        </div>
 
-        </div>
-        <div class="image6">
-            <img src="../images/photo3.png" alt="logo5" width="500px" height="400px">
-        </div>
     </div>
 
-    <div class="grid-item main5">
-        <div id="section5"></div>
-        <h1 style="color: green; padding-left: 250px;">Images</h1>
-        <div style="padding-left: 80px;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div style="padding-right: 700px;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <br>
-        <br>
-
-        <!--button gets moved when clicking-->
-        <!--button gets moved when clicking-->
-        <!--button gets moved when clicking-->
-
-        <div class="img">
-            <div class="w3-container">
-                <div class="w3-content w3-display-container">
-                    <div class="mySlides2">
-                        <img src="../images/Capture1.PNG" alt="Trash 1" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture2.png" alt="Trash 2" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture3.png" alt="Trash 3" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture4.png" alt="Forests" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture5.png" alt="Mountains" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture6.png" alt="Stream" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture7.png" alt="Drought" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture8.png" alt="Picking Up Trash" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture9.png" alt="Picking Up Trash 2" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture10.png" alt="Earth Day" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture11.png" alt="Snake" class="d-block w-100">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -352,7 +291,11 @@
             dots[slideIndex - 1].className += " w3-white";
         }
     </script>
-
+    <br>
+    <footer>
+        <ul>EcoLearning Together.</ul>
+        <ul>EcoLearning Together is a 501c3 tax-exempt organization with the EIN of 87-2969633.</ul>
+    </footer>
 </body>
 
 </html>

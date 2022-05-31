@@ -17,6 +17,9 @@
             grid-template-columns: auto auto auto;
             grid-gap: 10px;
             padding: 20px;
+            font-family: dair, serif;
+            font-weight: 400;
+            font-style: normal;
         }
         
         .grid-item {
@@ -24,53 +27,64 @@
             font-size: 20px;
         }
         
+        .title {
+            grid-column: 1 / span 11;
+            grid-row: 1;
+            padding-left: 100px;
+        }
+        
         .main1 {
-            grid-column: 1 / span 3;
-            grid-row: 1;
+            grid-column: 2 / span 2;
+            grid-row: 2;
+            color: orange;
         }
         
-        .image1 {
-            grid-column: 4 / span 1;
-            grid-row: 1;
-        }
-        
-        .image2 {
-            grid-column: 1 / span 5;
+        .side1 {
+            grid-column: 5 / span 6;
             grid-row: 2;
         }
         
         .main2 {
-            grid-column: 2 / span 3;
+            grid-column: 2 / span 2;
             grid-row: 3;
+            color: green;
         }
         
-        .image3 {
-            grid-column: 1 / span 2;
+        .side2 {
+            grid-column: 5 / span 6;
             grid-row: 3;
         }
         
         .main3 {
-            grid-column: 1 / span 3;
+            grid-column: 2 / span 2;
+            grid-row: 4;
+            color: orange;
+        }
+        
+        .side3 {
+            grid-column: 5 / span 6;
             grid-row: 4;
         }
         
         .main4 {
-            grid-column: 3 / span 2;
+            grid-column: 2 / span 2;
             grid-row: 5;
+            color: green;
         }
         
-        .image4 {
-            grid-column: 4 / span 1;
-            grid-row: 2;
-        }
-        
-        .image6 {
-            grid-column: 1 / span 2;
+        .side4 {
+            grid-column: 5 / span 6;
             grid-row: 5;
         }
         
         .main5 {
-            grid-column: 1 / span 2;
+            grid-column: 2 / span 2;
+            grid-row: 6;
+            color: orange;
+        }
+        
+        .side5 {
+            grid-column: 5 / span 6;
             grid-row: 6;
         }
         
@@ -136,149 +150,64 @@
         <p style="font-size: 20px;">Build your Ecosystem of educational change. Education and Protection of Ecosystems are key to our Earth. EcoLearners works to make sure our ecosystems can survive through hands-on action and education.</p>
         <p style="font-size: 20px;"> Get involved now!</p>
     </div>
-    <div class="navbar3">
-        <a href="#section1">About Us</a>
-        <a href="#section2">Our Team</a>
-        <a href="#section3">Resources</a>
-        <a href="#section4">Videos</a>
-        <a href="#section5">Images</a>
-    </div>
-    <h3 style="text-align: center;">Don't know where to start? Click one of the buttons above!</h3>
+
     <div class="grid-container">
-        <div id="section1"></div>
+        <div class="grid-item title">
+            <img src="../images/JAAT.PNG" alt="JAAT Logo">
+        </div>
         <div class="grid-item main1">
-            <h1 style="color: green;">About us</h1>
-            <br>
-            <p>We are a youth-led organization dedicated to protecting ecosystems by working with students throughout the world to ecolearn and rebuild ecosystems. With our collective knowledge, we can protect the Earth for generations to come!</p>
+            <h1>Origins</h1>
         </div>
-        <div class="grid-item image1">
-            <img style="padding-right: 20px;" src="../images/Capture.PNG" alt="Logo" width="400px" height="330px">
+        <div class="grid-item side1">
+            <p>Just Ask A Teen was started by Deborah Ugo-Omenuwka, a High School Sophomore in New York, in October 2020. She recently joined her School’s Newspaper, the MVA Times, and created a new role for herself, Advice columnist. She knew that during
+                this time of chaos, stress, death, and isolation many teens needed a listening ear. She started taking advice submissions from students at her school and was received very well. Her column was in the top 3 most viewed pages for 4 issues
+                straight! She then moved on to be an interviewer and decided to add that to her advice column, but realized that one page is not enough. That’s when she decided it was time to branch out and run her own advice site. </p>
         </div>
-        <div class="grid-item image2">
-            <img src="../images/photo2.PNG" alt="Logo" width="1250px" height="400px">
-        </div>
-        <div id="section2"></div>
-
-
-        <!--Section 2 tag does not scroll to correct location-->
-        <!--Section 2 tag does not scroll to correct location-->
-        <!--Section 2 tag does not scroll to correct location-->
-
-
         <div class="grid-item main2">
-            <h1 style="color: orange;">Our Team</h1>
-            <br>
-            <p>Our team consists of young students wanting to make a difference in our world. Our founders are from Kirkland, Washington and are highschoolers. Look below to learn more about us and how it all came together.</p>
-
+            <h1>Branching Out</h1>
         </div>
-
-        <div class="grid-item image3">
-            <img src="../images/logo3.png" alt="logo3" width="200px" height="300px">
+        <div class="grid-item side2">
+            <p>Branching out to her site was exciting, but stressful. She was running a one-woman show and the submissions were not stopping anytime soon. She had to make graphics, conduct interviews, respond to advice submissions, and much more. And as
+                soon as she got a hang of this routine, she was struck with more creative epiphanies that she wanted to implement. She started an anonymous rant/personal stories, 2 podcasts, opportunities, and organization highlights. She did all this
+                and more by herself. This obviously took a toll on her and the quality of her work.</p>
         </div>
         <div class="grid-item main3">
-            <div id="section3"></div>
-
-            <h1 style="color: green;">Resources</h1>
-            <br>
-            <p>Impact your community and make a local difference. Chapters are a great way to make sure YOUR ecosystems are protected. Starting a chapter is similar to starting your own organization, and you get to decide what YOU want to do! You also get
-                volunteer hours!
-            </p>
-            <br>
-            <p> Through the chapter system, you get to brainstorm and host your own events, local biodiversity restorations, working with legislators, and working with youth at schools! You also can also plan things such as newsletters and more! It's all
-                up to you! Create your own chapter or join one, its easy! View more down below!</p>
-
-
+            <h1>Revival</h1>
         </div>
-        <div class="grid-item image5">
-            <img src="../images/logo4.png" alt="logo3" width="300px" height="300px">
+        <div class="grid-item side3">
+            <p>She subconsciously took a break on her site and struggled to produce the quality content, JAAT was known for. But over this Spring Break, she had enough to update and rebrand Just Ask A Teen. She made this community an international community
+                and site. She revived all the sections of JAAT and was able to market it successfully to get the viewer and follower rate back to where it was. Right now, Just Ask A Teen has a growing, interactive, and diverse online community. We have
+                a frequently updated list of opportunities for teens ranging from volunteer work to paid internships to competitions and workshops. JAAT is even hosting its first-ever IG Giveaway right now! </p>
         </div>
         <div class="grid-item main4">
-            <div id="section4"></div>
-            <h1 style="color: orange;">Videos</h1>
-            <br> Learning about Ecosystems is key to protecting them. That's why we spread education while rebuilding through our events.
-
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1pFCIPK4jcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k0ULFHYumzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NUgjp4Ek6D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zGkeXuY57oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hnydUunWIVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qzVA_G1BPa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UgwXUPnwWZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MBwgfUdDZCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/x7_Xg7bKdn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pNa19YrENzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2IG0PZw8-Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <h1>Back at it Again</h1>
+        </div>
+        <div class="grid-item side4">
+            <p>Just Ask A Teen is back and it’s stronger than ever. Deborah has appointed an assistant director, Betsy-Jane Paul-Odionhin, as her right-hand woman. She main helps with social media logistics: scheduling posts, interacting with followers,
+                and increasing follower count. Just Ask A Teen is here to help teens receive advice, a shoulder to lean/cry on, and a listening ear. They produce general advice articles on how to network, deal with friends, etc. They also give you a place
+                to rant, confess, and share personal stories anonymously. They conduct student interviews allowing you to get tips and advice from other teens as well. Just Ask A Teen runs 2 Podcasts with funny, relatable, and insightful conversations
+                between Deborah and her peers. JAAT’s Discord community is growing by the day and is always filled with advice, memes, and more. Just Ask A Teen is ready to make an impact and difference in the lives of teenagers all over the world! Stay
+                tuned for team applications if you want to be part of JAAT’s impact! </p>
+        </div>
+        <div class="grid-item main5">
+            <h1>Stay Updated</h1>
+        </div>
+        <div class="grid-item side5">
+            <ul>
+                <a href="https://sites.google.com/view/just-ask-a-teen/home">Just Ask A Teen</a>
+            </ul>
+            <ul>
+                <a href="https://linktr.ee/just.ask.a.teen">Just Ask a Teen Information Page</a>
+            </ul>
+            <ul>
+                <a href="https://discord.gg/vQ2QQeE2Sx">Discord Community</a>
+            </ul>
 
         </div>
-        <div class="image6">
-            <img src="../images/photo3.png" alt="logo5" width="500px" height="400px">
-        </div>
+
+
     </div>
 
-    <div class="grid-item main5">
-        <div id="section5"></div>
-        <h1 style="color: green; padding-left: 250px;">Images</h1>
-        <div style="padding-left: 80px;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div style="padding-right: 700px;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <br>
-        <br>
-
-        <!--button gets moved when clicking-->
-        <!--button gets moved when clicking-->
-        <!--button gets moved when clicking-->
-
-        <div class="img">
-            <div class="w3-container">
-                <div class="w3-content w3-display-container">
-                    <div class="mySlides2">
-                        <img src="../images/Capture1.PNG" alt="Trash 1" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture2.png" alt="Trash 2" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture3.png" alt="Trash 3" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture4.png" alt="Forests" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture5.png" alt="Mountains" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture6.png" alt="Stream" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture7.png" alt="Drought" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture8.png" alt="Picking Up Trash" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture9.png" alt="Picking Up Trash 2" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture10.png" alt="Earth Day" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture11.png" alt="Snake" class="d-block w-100">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -352,7 +281,11 @@
             dots[slideIndex - 1].className += " w3-white";
         }
     </script>
-
+    <br>
+    <footer>
+        <ul>EcoLearning Together.</ul>
+        <ul>EcoLearning Together is a 501c3 tax-exempt organization with the EIN of 87-2969633.</ul>
+    </footer>
 </body>
 
 </html>

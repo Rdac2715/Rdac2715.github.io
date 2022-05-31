@@ -17,6 +17,9 @@
             grid-template-columns: auto auto auto;
             grid-gap: 10px;
             padding: 20px;
+            font-family: dair, serif;
+            font-weight: 400;
+            font-style: normal;
         }
         
         .grid-item {
@@ -24,53 +27,64 @@
             font-size: 20px;
         }
         
+        .title {
+            grid-column: 1 / span 11;
+            grid-row: 1;
+            padding-left: 250px;
+        }
+        
         .main1 {
-            grid-column: 1 / span 3;
-            grid-row: 1;
+            grid-column: 2 / span 2;
+            grid-row: 2;
+            color: orange;
         }
         
-        .image1 {
-            grid-column: 4 / span 1;
-            grid-row: 1;
-        }
-        
-        .image2 {
-            grid-column: 1 / span 5;
+        .side1 {
+            grid-column: 5 / span 6;
             grid-row: 2;
         }
         
         .main2 {
-            grid-column: 2 / span 3;
+            grid-column: 2 / span 2;
             grid-row: 3;
+            color: green;
         }
         
-        .image3 {
-            grid-column: 1 / span 2;
+        .side2 {
+            grid-column: 5 / span 6;
             grid-row: 3;
         }
         
         .main3 {
-            grid-column: 1 / span 3;
+            grid-column: 2 / span 2;
+            grid-row: 4;
+            color: orange;
+        }
+        
+        .side3 {
+            grid-column: 5 / span 6;
             grid-row: 4;
         }
         
         .main4 {
-            grid-column: 3 / span 2;
+            grid-column: 2 / span 2;
             grid-row: 5;
+            color: green;
         }
         
-        .image4 {
-            grid-column: 4 / span 1;
-            grid-row: 2;
-        }
-        
-        .image6 {
-            grid-column: 1 / span 2;
+        .side4 {
+            grid-column: 5 / span 6;
             grid-row: 5;
         }
         
         .main5 {
-            grid-column: 1 / span 2;
+            grid-column: 2 / span 2;
+            grid-row: 6;
+            color: orange;
+        }
+        
+        .side5 {
+            grid-column: 5 / span 6;
             grid-row: 6;
         }
         
@@ -136,149 +150,46 @@
         <p style="font-size: 20px;">Build your Ecosystem of educational change. Education and Protection of Ecosystems are key to our Earth. EcoLearners works to make sure our ecosystems can survive through hands-on action and education.</p>
         <p style="font-size: 20px;"> Get involved now!</p>
     </div>
-    <div class="navbar3">
-        <a href="#section1">About Us</a>
-        <a href="#section2">Our Team</a>
-        <a href="#section3">Resources</a>
-        <a href="#section4">Videos</a>
-        <a href="#section5">Images</a>
-    </div>
-    <h3 style="text-align: center;">Don't know where to start? Click one of the buttons above!</h3>
+
     <div class="grid-container">
-        <div id="section1"></div>
+        <div class="grid-item title">
+            <img src="../images/Dingbats.PNG" alt="Dingbats Logo">
+        </div>
         <div class="grid-item main1">
-            <h1 style="color: green;">About us</h1>
-            <br>
-            <p>We are a youth-led organization dedicated to protecting ecosystems by working with students throughout the world to ecolearn and rebuild ecosystems. With our collective knowledge, we can protect the Earth for generations to come!</p>
+            <h1>What is Dingbats*?
+            </h1>
         </div>
-        <div class="grid-item image1">
-            <img style="padding-right: 20px;" src="../images/Capture.PNG" alt="Logo" width="400px" height="330px">
+        <div class="grid-item side1">
+            <p>Dingbats* is an eco-friendly brand of stationery developed in a masterful consideration of materials and design. Our notebooks are hand-made with personality represented by minimalistic ornamental motifs with sound environmental credentials
+                including the mark of the Forest Stewardship Council. All materials used are degradable, vegan and recyclable. Our notebooks can be used as an executive notebook, bullet journal, writing pad/diary, notepad, and sketchbook. Whether you
+                are an artist, designer, fountain-pen enthusiast, bullet journalist, business person, student or literally anyone else, a notebook should always be your companion for jotting down what's on your mind.</p>
         </div>
-        <div class="grid-item image2">
-            <img src="../images/photo2.PNG" alt="Logo" width="1250px" height="400px">
-        </div>
-        <div id="section2"></div>
-
-
-        <!--Section 2 tag does not scroll to correct location-->
-        <!--Section 2 tag does not scroll to correct location-->
-        <!--Section 2 tag does not scroll to correct location-->
-
-
         <div class="grid-item main2">
-            <h1 style="color: orange;">Our Team</h1>
-            <br>
-            <p>Our team consists of young students wanting to make a difference in our world. Our founders are from Kirkland, Washington and are highschoolers. Look below to learn more about us and how it all came together.</p>
-
+            <h1>The Vision</h1>
         </div>
-
-        <div class="grid-item image3">
-            <img src="../images/logo3.png" alt="logo3" width="200px" height="300px">
+        <div class="grid-item side2">
+            <p>We see a future in which humans live in harmony with nature and communities committed to protect wildlife, fresh waters, forests and oceans. Join us in the promotion of a green digital age whilst serving your craftsmanship, artistry and ingenious
+                self.
+            </p>
         </div>
         <div class="grid-item main3">
-            <div id="section3"></div>
-
-            <h1 style="color: green;">Resources</h1>
-            <br>
-            <p>Impact your community and make a local difference. Chapters are a great way to make sure YOUR ecosystems are protected. Starting a chapter is similar to starting your own organization, and you get to decide what YOU want to do! You also get
-                volunteer hours!
-            </p>
-            <br>
-            <p> Through the chapter system, you get to brainstorm and host your own events, local biodiversity restorations, working with legislators, and working with youth at schools! You also can also plan things such as newsletters and more! It's all
-                up to you! Create your own chapter or join one, its easy! View more down below!</p>
-
-
+            <h1>The Story</h1>
         </div>
-        <div class="grid-item image5">
-            <img src="../images/logo4.png" alt="logo3" width="300px" height="300px">
+        <div class="grid-item side3">
+            <p>Dingbats* are produced by the oldest established company in Lebanon, Société Kamel Bekdache et Fils SAL (SKB). SKB is a privately held family business established in 1800 reaching its fifth generation. It is the first company in the entire
+                region to attain both the ISO 9001:2020 and FSC® (FSC-C105099) qualifications, trading and converting high quality paper and board, while serving 1130 clients located in the Middle East, North Africa and Europe. Since 2011, SKB began manufacturing
+                notebooks and is now the proud manufacturer of Dingbats*.</p>
         </div>
         <div class="grid-item main4">
-            <div id="section4"></div>
-            <h1 style="color: orange;">Videos</h1>
-            <br> Learning about Ecosystems is key to protecting them. That's why we spread education while rebuilding through our events.
-
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1pFCIPK4jcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k0ULFHYumzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NUgjp4Ek6D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zGkeXuY57oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hnydUunWIVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qzVA_G1BPa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UgwXUPnwWZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MBwgfUdDZCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/x7_Xg7bKdn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pNa19YrENzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            <div class="mySlides">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2IG0PZw8-Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-
+            <h1>A Message From the Founder</h1>
         </div>
-        <div class="image6">
-            <img src="../images/photo3.png" alt="logo5" width="500px" height="400px">
+        <div class="grid-item side4">
+            <p>“My great great grandfather established one of the first paper shops in Lebanon in the early 19th century, trading high quality paper more or less continuously from then until the present day. I passionately believe that there’s still a place
+                for this most traditional of materials in today’s high speed, digital world. Sometimes you need something that’s more tactile – more personal. Our wide range of Dingbats* Notebooks lets you choose the design, material and colour that reflects
+                your own personality.” – Jamal Bekdache </p>
         </div>
     </div>
 
-    <div class="grid-item main5">
-        <div id="section5"></div>
-        <h1 style="color: green; padding-left: 250px;">Images</h1>
-        <div style="padding-left: 80px;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div style="padding-right: 700px;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <br>
-        <br>
-
-        <!--button gets moved when clicking-->
-        <!--button gets moved when clicking-->
-        <!--button gets moved when clicking-->
-
-        <div class="img">
-            <div class="w3-container">
-                <div class="w3-content w3-display-container">
-                    <div class="mySlides2">
-                        <img src="../images/Capture1.PNG" alt="Trash 1" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture2.png" alt="Trash 2" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture3.png" alt="Trash 3" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture4.png" alt="Forests" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture5.png" alt="Mountains" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture6.png" alt="Stream" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture7.png" alt="Drought" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture8.png" alt="Picking Up Trash" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture9.png" alt="Picking Up Trash 2" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture10.png" alt="Earth Day" class="d-block w-100">
-                    </div>
-                    <div class="mySlides2">
-                        <img src="../images/Capture11.png" alt="Snake" class="d-block w-100">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -352,7 +263,11 @@
             dots[slideIndex - 1].className += " w3-white";
         }
     </script>
-
+    <br>
+    <footer>
+        <ul>EcoLearning Together.</ul>
+        <ul>EcoLearning Together is a 501c3 tax-exempt organization with the EIN of 87-2969633.</ul>
+    </footer>
 </body>
 
 </html>

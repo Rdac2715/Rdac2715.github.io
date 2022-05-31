@@ -1,9 +1,9 @@
 .navbar {
     overflow: hidden;
     background-color: rgb(185, 157, 105);
-    font-family: Arial, Helvetica, sans-serif;
-    border: 2px;
-    font-family: dair-67, serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     font-weight: 400;
     font-style: normal;
     color: green;
@@ -40,7 +40,9 @@
     color: rgb(0, 0, 0);
     padding: 14px 25px;
     background-color: inherit;
-    font-family: inherit;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
 }
 
@@ -79,9 +81,13 @@
 .navbar2 {
     overflow: hidden;
     background-color: rgb(185, 157, 105);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     border: 2px;
-    font-family: dair-67, serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     font-weight: 400;
     font-style: normal;
 }
@@ -114,7 +120,9 @@
     color: rgb(0, 0, 0);
     padding: 14px 25px;
     background-color: inherit;
-    font-family: inherit;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
 }
 
@@ -157,7 +165,9 @@
 }
 
 body {
-    font-family: dair-67, serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     font-weight: 400;
     font-style: normal;
 }
@@ -169,9 +179,13 @@ html {
 .navbar3 {
     overflow: hidden;
     background-color: green(217, 188, 138);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     border: 2px;
-    font-family: dair-67, serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     font-weight: 400;
     font-style: normal;
     padding-left: 300px;
@@ -180,9 +194,13 @@ html {
 .navbar3 {
     overflow: hidden;
     background-color: rgb(217, 188, 138);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     border: 2px;
-    font-family: dair-67, serif;
+    font-family: dair, serif;
+    font-weight: 400;
+    font-style: normal;
     font-weight: 400;
     font-style: normal;
 }
@@ -274,4 +292,8 @@ html {
 .active,
 .demo:hover {
     opacity: 1;
+}
+
+.left {
+    padding-left: 50px;
 }

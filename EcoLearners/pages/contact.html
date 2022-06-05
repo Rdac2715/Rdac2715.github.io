@@ -28,53 +28,18 @@
         }
         
         .main1 {
-            grid-column: 1 / span 3;
+            grid-column: 1 / span 1;
+            grid-row: 1;
+        }
+        
+        .side1 {
+            grid-column: 3 / span 1;
             grid-row: 1;
         }
         
         .image1 {
-            grid-column: 4 / span 1;
+            grid-column: 2 / span 1;
             grid-row: 1;
-        }
-        
-        .image2 {
-            grid-column: 1 / span 5;
-            grid-row: 2;
-        }
-        
-        .main2 {
-            grid-column: 2 / span 3;
-            grid-row: 3;
-        }
-        
-        .image3 {
-            grid-column: 1 / span 2;
-            grid-row: 3;
-        }
-        
-        .main3 {
-            grid-column: 1 / span 3;
-            grid-row: 4;
-        }
-        
-        .main4 {
-            grid-column: 3 / span 2;
-            grid-row: 5;
-        }
-        
-        .image4 {
-            grid-column: 4 / span 1;
-            grid-row: 2;
-        }
-        
-        .image6 {
-            grid-column: 1 / span 2;
-            grid-row: 5;
-        }
-        
-        .main5 {
-            grid-column: 1 / span 2;
-            grid-row: 6;
         }
         
         .mySlides {
@@ -96,10 +61,50 @@
             width: 13px;
             padding: 0
         }
+        
+        * h1 {
+            font-family: dair, serif;
+        }
+        
+        * h2 {
+            font-family: dair, serif;
+        }
+        
+        * p {
+            font-family: dair, serif;
+        }
+        
+        * title {
+            font-family: dair, serif;
+        }
+        
+        * h3 {
+            font-family: dair, serif;
+        }
+        
+        * h4 {
+            font-family: dair, serif;
+        }
+        
+        * h5 {
+            font-family: dair, serif;
+        }
+        
+        * h6 {
+            font-family: dair, serif;
+        }
+        
+        * footer {
+            font-family: dair, serif;
+        }
+        
+        * body {
+            font-family: dair, serif;
+        }
     </style>
 </head>
 
-<body style="background-color:rgb(255, 242, 221);">
+<body style="background-color:rgb(255, 224, 173); font-family: dair, serif;">
 
     <div class="navbar">
         <a href="index.html">Home</a>
@@ -148,6 +153,7 @@
                     <li>
                         <a href="mailto:contact@ecolearners.org">contact@ecolearners.org</a>
                     </li>
+                    <br>
                     <li>
                         <a href="mailto:chapters@ecolearners.org">chapters@ecolearners.org</a>
                     </li>
@@ -156,12 +162,21 @@
         </div>
         <div class="grid-item side1">
 
+            <h3>Get Involved Today!</h3>
+            <form>
 
-            <!--Survery is missing-->
-            <!--Survery is missing-->
-            <!--Survery is missing-->
+                <label for="fname">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="fname">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <br>
+                <button onclick="myFunction3()">Submit</button>
+            </form>
 
 
+        </div>
+        <div class="grid-item image1">
+            <img src="../images/My project (1).png" alt="logo" width="700px" height="700px">
         </div>
     </div>
     <script>
@@ -235,6 +250,10 @@
             }
             x[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " w3-white";
+        }
+
+        function myFunction3() {
+            window.alert("Thank you for submitting your name and email to EcoLearners");
         }
     </script>
     <br>

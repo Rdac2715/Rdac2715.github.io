@@ -1,0 +1,91 @@
+body {
+    background-color: gray;
+    font-family: belda-normal, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h5 {
+    font-family: belda-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    margin: 15px auto;
+    width: 1000px;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+pre code {
+    background-color: slategray;
+    border: 1px solid;
+    display: block;
+    padding: 20px;
+    color: black;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: black;
+}
+
+a.special-link {
+    color: blueviolet;
+}
+
+.hover-div {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+
+.hover-div:hover {
+    background-color: brown;
+}
+
+p:first-child {
+    color: plum;
+}
+
+p:last-child {
+    color: black;
+}
+
+.tooltip p {
+    display: none;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.tooltip:hover p {
+    display: block;
+}
+
+.pseudo-elements::first-letter {
+    color: red;
+}
+
+.pseudo-elements::before {
+    content: "READ THIS: ";
+    font-weight: bold;
+}
+
+.pseudo-elements::after {
+    content: " - ### REMEMBER THIS ###";
+    font-weight: bold;
+}

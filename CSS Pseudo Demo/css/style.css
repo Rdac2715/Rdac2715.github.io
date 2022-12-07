@@ -86,6 +86,6 @@ p:last-child {
 }
 
 .pseudo-elements::after {
-    content: " - ### REMEMBER THIS ###";
+    content: " - ## REMEMBER THIS ##";
     font-weight: bold;
 }

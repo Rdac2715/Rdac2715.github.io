@@ -1,149 +1,188 @@
 .center {
+    /*Typography stuff*/
     text-align: center;
 }
 
 .grid-container {
+    /*Display stuff*/
     display: grid;
+    /*Miscellaneous*/
     grid-gap: 10px;
 }
 
 .grid-item {
-    background-color: blanchedalmond;
-    font-size: 16px;
+    /*Box model stuff*/
     padding: 20px;
+    background-color: blanchedalmond;
+    /*Typography stuff*/
+    font-size: 16px;
 }
 
 .title {
+    /*Display stuff*/
     grid-column: 1 / span 3;
     grid-row: 1;
-    text-align: center;
+    /*Typography stuff*/
     font-family: belda-extended, sans-serif;
-    font-weight: 700;
     font-style: normal;
+    font-weight: 700;
+    text-align: center;
 }
 
 .main-image {
+    /*Display stuff*/
     grid-column: 1 / span 3;
     grid-row: 2;
+    /*Box model stuff*/
     margin: 10px auto;
 }
 
 .main1 {
+    /*Display stuff*/
     grid-column: 1 / span 3;
     grid-row: 3;
+    /*Typography stuff*/
     font-family: belda-normal, sans-serif;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
 }
 
 .main2 {
+    /*Display stuff*/
     grid-column: 1 / span 3;
     grid-row: 4;
+    /*Typography stuff*/
     font-family: belda-normal, sans-serif;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
 }
 
 .main3 {
+    /*Display stuff*/
     grid-column: 1 / span 3;
     grid-row: 5;
+    /*Typography stuff*/
     font-family: belda-normal, sans-serif;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
 }
 
 .support1 {
+    /*Display stuff*/
     grid-column: 1 / span 2;
     grid-row: 6;
+    /*Typography stuff*/
     font-family: belda-normal, sans-serif;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
 }
 
 .support2 {
+    /*Display stuff*/
     grid-column: 3 / span 1;
     grid-row: 6;
+    /*Typography stuff*/
     font-family: belda-normal, sans-serif;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
 }
 
 .container {
+    /*Miscellaneous*/
     box-sizing: border-box;
 }
 
 .cursor {
+    /*Miscellaneous*/
     cursor: pointer;
 }
 
 .next {
+    /*Positioning stuff*/
     right: 0;
+    /*Box model stuff*/
     border-radius: 3px 0 0 3px;
 }
 
 .caption-container {
+    /*Box model stuff*/
     margin: 20px auto;
-    background-color: #222;
     padding: 2px 16px;
+    background-color: #222;
+    /*Typography stuff*/
     color: white;
 }
 
 .row:after {
+    /*Display stuff*/
     content: "";
     display: table;
+    /*Miscellaneous*/
     clear: both;
 }
 
 .column {
-    float: left;
+    /*Box model stuff*/
     width: 16.66%;
+    /*Miscellaneous*/
+    float: left;
 }
 
 .demo {
+    /*Manipulations stuff*/
     opacity: 0.6;
 }
 
 .active,
 .demo:hover {
+    /*Manipulations stuff*/
     opacity: 1;
 }
 
 .image1 {
+    /*Display stuff*/
     grid-column: 1;
     grid-row: 1;
 }
 
 .image2 {
+    /*Display stuff*/
     grid-column: 2;
     grid-row: 1;
 }
 
 .image3 {
+    /*Display stuff*/
     grid-column: 3;
     grid-row: 1;
 }
 
 .image4 {
+    /*Display stuff*/
     grid-column: 4;
     grid-row: 1;
 }
 
 .image5 {
+    /*Display stuff*/
     grid-column: 1;
     grid-row: 2;
 }
 
 .image5 {
+    /*Display stuff*/
     grid-column: 2;
     grid-row: 2;
 }
 
 .image5 {
+    /*Display stuff*/
     grid-column: 3;
     grid-row: 2;
 }
 
 .image5 {
+    /*Display stuff*/
     grid-column: 4;
     grid-row: 2;
 }
@@ -152,63 +191,83 @@
 /*   I followed a video about animation on youtube video for this idea */
 
 * {
+    /*Box model stuff*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*Typography stuff*/
     font-family: belda-normal, sans-serif;
+    /*Miscellaneous*/
+    box-sizing: border-box;
     ;
 }
 
 body {
-    border: 1px solid orangered;
+    /*Display stuff*/
     display: flex;
-    justify-content: center;
-    -ms-align-items: center;
     align-items: center;
+    justify-content: center;
+    /*Box model stuff*/
     min-height: 100vh;
+    border: 1px solid orangered;
     background-color: black;
+    /*Miscellaneous*/
+    -ms-align-items: center;
 }
 
 .box {
+    /*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*Positioning stuff*/
     position: relative;
+    /*Box model stuff*/
     width: 300px;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    -ms-align-items: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 5);
-    border-radius: 100px;
-    overflow: hidden;
     margin: 0px 30px 0px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 5);
+    /*Miscellaneous*/
+    -ms-align-items: center;
+    overflow: hidden;
 }
 
 .box h2 {
-    color: whitesmoke;
-    text-shadow: 2px 2px black;
-    font-size: 40px;
+    /*Positioning stuff*/
     z-index: 2;
+    /*Typography stuff*/
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    color: whitesmoke;
 }
 
 .box::before {
+    /*Display stuff*/
     content: '';
+    /*Positioning stuff*/
     position: absolute;
+    /*Box model stuff*/
     width: 170px;
     height: 100%;
     background: linear-gradient(#00ccff, #d50);
-    animation-name: rotate;
-    animation-duration: 4s;
+    /*Manipulations stuff*/
     animation-delay: 0s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-name: rotate;
     animation-timing-function: linear;
 }
 
 .box::after {
+    /*Display stuff*/
     content: '';
+    /*Positioning stuff*/
     position: absolute;
-    background-color: #0e1538;
-    inset: 5px;
+    /*Box model stuff*/
     border-radius: 16px;
+    background-color: #0e1538;
+    /*Miscellaneous*/
+    inset: 5px;
 }
 
 @keyframes rotate {
@@ -230,26 +289,34 @@ body {
 }
 
 .scroll-bar {
+    /*Positioning stuff*/
     position: relative;
-    max-height: 600px;
+    /*Box model stuff*/
     width: 500px;
     height: 300px;
+    max-height: 600px;
 }
 
 .words {
+    /*Positioning stuff*/
     position: absolute;
-    margin: 20px;
     top: 0;
+    /*Box model stuff*/
+    margin: 20px;
+    /*Manipulations stuff*/
     animation: scroll 30s infinite;
 }
 
 span {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
     min-width: 500px;
     min-height: 40px;
-    display: block;
-    color: rgb(0, 0, 0);
     margin: 5px;
     background: rgb(255, 255, 255);
+    /*Typography stuff*/
+    color: rgb(0, 0, 0);
 }
 
 @keyframes scroll {

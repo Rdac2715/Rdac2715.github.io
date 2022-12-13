@@ -277,7 +277,41 @@ body {
     }
 }
 
-.box5 {
-    width: 1000px;
-    height: 3000px;
+.scroll-bar {
+    position: relative;
+    max-height: 600px;
+    width: 500px;
+    height: 300px;
+}
+
+.words {
+    position: absolute;
+    margin: 20px;
+    top: 0;
+    animation: scroll 60s infinite;
+}
+
+span {
+    min-width: 500px;
+    min-height: 40px;
+    display: block;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    background: rgb(255, 255, 255);
+}
+
+@keyframes scroll {
+    95% {
+        top: -600%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.scroll-infinite {
+    position: absolute;
+    margin: 20px;
+    top: 0;
+    animation: scroll 30s linear 0s infinite;
 }

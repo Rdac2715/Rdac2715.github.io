@@ -1,0 +1,23 @@
+body {
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.box {
+    background-color: #fde488;
+    border: solid;
+    padding: 50px;
+    margin: 20px 50px 50px;
+    box-shadow: 0 0 0 5px red;
+    outline: dashed 5px white;
+    height: auto;
+}
+
+.filler {
+    background-color: #fde488;
+    opacity: 30%;
+}

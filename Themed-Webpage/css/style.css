@@ -1,38 +1,63 @@
 body {
+    /*Box model stuff*/
     height: 100%;
+    background-color: black;
     background-image: url('../images/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /*Miscellaneous*/
     overflow: visible;
-    background-color: black;
 }
 
 .box {
-    font-family: cheddar-gothic-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: rgba(253, 228, 136, 0.7);
-    border: solid;
-    padding: 50px;
-    margin: 20px 50px 50px;
-    box-shadow: 0 0 0 5px red;
-    outline: dashed 5px white;
+    /*Box model stuff*/
     height: auto;
+    margin: 20px 50px 50px;
+    padding: 50px;
+    border: solid;
+    background-color: rgba(255, 153, 0, 0.7);
+    /*Typography stuff*/
+    font-family: cheddar-gothic-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /*Manipulations stuff*/
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-name: borderlands;
+    animation-timing-function: linear;
 }
 
 p {
+    /*Typography stuff*/
     font-size: larger;
+    font-family: ballinger-mono, sans-serif;
+    font-style: normal;
+    font-weight: 500;
 }
 
 h1 {
+    /*Typography stuff*/
     font-family: ballinger-mono, sans-serif;
-    font-weight: 700;
     font-style: normal;
+    font-weight: 700;
 }
 
-p {
-    font-family: ballinger-mono, sans-serif;
-    font-weight: 500;
-    font-style: normal;
+h2 {
+    font-family: lamar-pen, sans-serif;
+    font-weight: 1000;
+    font-style: italic;
+}
+
+@keyframes borderlands {
+    0% {
+        box-shadow: 0 0 0 5px red;
+        outline: dashed 5px white;
+    }
+    100% {
+        box-shadow: 0 0 0 5px white;
+        outline: dashed 5px red;
+    }
 }

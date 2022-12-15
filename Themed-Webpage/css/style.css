@@ -4,11 +4,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    overflow: visible;
+    background-color: black;
 }
 
 .box {
-    background-color: #fde488;
+    font-family: cheddar-gothic-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(253, 228, 136, 0.7);
     border: solid;
     padding: 50px;
     margin: 20px 50px 50px;
@@ -17,7 +21,18 @@ body {
     height: auto;
 }
 
-.filler {
-    background-color: #fde488;
-    opacity: 30%;
+p {
+    font-size: larger;
+}
+
+h1 {
+    font-family: ballinger-mono, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: ballinger-mono, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }

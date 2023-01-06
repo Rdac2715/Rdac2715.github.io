@@ -16,6 +16,47 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <script href="../js/script.js"></script>
+    <style>
+        .scroll-bar {
+            /*Positioning stuff*/
+            position: relative;
+            /*Box model stuff*/
+            width: 500px;
+            height: 300px;
+            max-height: 600px;
+        }
+        
+        .words {
+            /*Positioning stuff*/
+            position: absolute;
+            top: 0;
+            /*Box model stuff*/
+            margin: 20px;
+            /*Manipulations stuff*/
+            animation: scroll 30s infinite;
+        }
+        
+        span {
+            /*Display stuff*/
+            display: block;
+            /*Box model stuff*/
+            min-width: 500px;
+            min-height: 40px;
+            margin: 5px;
+            background: rgb(255, 255, 255);
+            /*Typography stuff*/
+            color: rgb(0, 0, 0);
+        }
+        
+        @keyframes scroll {
+            0% {
+                top: -25%;
+            }
+            100% {
+                top: -310%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -43,7 +84,23 @@
         </div>
     </nav>
 
+    <h2 style="text-align: center;">What is your dream design?</h2>
+    <br>
+    <h3 style="text-align: center;">Here is some of ours:</h3>
+
+    <div class="scroll-bar">
+        <div class="words">
+            <span>hello</span>
+            <span>hello</span>
+            <span>hello</span>
+            <span>hello</span>
+
+        </div>
+    </div>
 
 </body>
+
+<script>
+</script>
 
 </html>

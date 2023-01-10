@@ -9,3 +9,8 @@
 .nav-link {
     font-size: 15px;
 }
+
+.row {
+    height: 200px;
+    width: 200px;
+}

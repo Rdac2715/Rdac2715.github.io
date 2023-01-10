@@ -16,12 +16,19 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <script href="../js/script.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html"><img src="../Images/Back-up logo.PNG" style="height: 90px"></a>
-        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse collapsibleNavBar" id="navbarSupportedContent">
@@ -45,6 +52,48 @@
         </div>
         <br>
     </nav>
+    <!--Side nav-->
+    <div class="row">
+        <div class="col-md-4" style="margin:20px; padding:30px; border:1px solid black; background-color:lightgray;">
+            <h1>Side Nav</h1>
+        </div>
+        <!--Carousel-->
+        <div class="col-md-6">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="la.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="chicago.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ny.jpg" alt="New York">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

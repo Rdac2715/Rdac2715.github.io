@@ -19,11 +19,10 @@
     <style>
         .scroll-bar {
             /*Positioning stuff*/
-            position: relative;
+            position: fixed;
             /*Box model stuff*/
-            width: 500px;
-            height: 300px;
-            max-height: 600px;
+            width: 450px;
+            height: 200px;
         }
         
         .words {
@@ -33,16 +32,15 @@
             /*Box model stuff*/
             margin: 20px;
             /*Manipulations stuff*/
-            animation: scroll 30s infinite;
+            animation: scroll 20s infinite;
         }
         
         span {
             /*Display stuff*/
             display: block;
             /*Box model stuff*/
-            min-width: 500px;
-            min-height: 40px;
-            margin: 5px;
+            width: 200px;
+            height: 40px;
             background: rgb(255, 255, 255);
             /*Typography stuff*/
             color: rgb(0, 0, 0);
@@ -50,10 +48,10 @@
         
         @keyframes scroll {
             0% {
-                top: -25%;
+                top: 50%;
             }
             100% {
-                top: -310%;
+                top: -600%;
             }
         }
     </style>
@@ -61,30 +59,55 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="../Images/Back-up logo.PNG" style="height: 90px"></a>
+
+        <a class="navbar-brand" href="index.html"><img src="../Images/Back-up logo.PNG" style="height: 90px; width: 415px;"></a>
+
         <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
+
         <div class="collapse navbar-collapse collapsibleNavBar" id="navbarSupportedContent">
+
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="process.html">Process</a>
-                </li>
+
                 <li class="nav-item active">
+
+                    <a class="nav-link" href="index.html">Home</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="process.html">Process</a>
+
+                </li>
+
+                <li class="nav-item">
+
                     <a class="nav-link" href="beforeAfter.html">Before & After</a>
+
                 </li>
+
                 <li class="nav-item">
+
                     <a class="nav-link" href="aboutUs.html">About Us</a>
+
                 </li>
+
                 <li class="nav-item">
+
                     <a class="nav-link" href="contactUs.html">Contact Us</a>
+
                 </li>
+
             </ul>
+
         </div>
+
         <br>
+
     </nav>
 
     <h2 style="text-align: center;">What is your dream design?</h2>
@@ -93,13 +116,75 @@
 
     <div class="scroll-bar">
         <div class="words">
-            <span>hello</span>
-            <span>hello</span>
-            <span>hello</span>
-            <span>hello</span>
-
+            <span><img style="width: 450px;height: 200px;" src="../Images/Back-up logo.PNG" alt=""></span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span><img style="width: 450px;height: 200px;" src="../Images/Back-up logo.PNG" alt=""></span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span><img style="width: 450px;height: 200px;" src="../Images/Back-up logo.PNG" alt=""></span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span><img style="width: 450px;height: 200px;" src="../Images/Back-up logo.PNG" alt=""></span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span><img style="width: 450px;height: 200px;" src="../Images/Back-up logo.PNG" alt=""></span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span><img style="width: 450px;height: 200px;" src="../Images/Back-up logo.PNG" alt=""></span>
         </div>
     </div>
+
 
 </body>
 

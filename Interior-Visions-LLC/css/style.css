@@ -1,3 +1,16 @@
 .nav-item a:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+}
+
+.collapse {
+    margin-left: 50px;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.row {
+    height: 200px;
+    width: 200px;
 }

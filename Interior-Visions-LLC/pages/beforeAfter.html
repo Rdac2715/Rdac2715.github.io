@@ -19,11 +19,10 @@
     <style>
         .scroll-bar {
             /*Positioning stuff*/
-            position: relative;
+            position: fixed;
             /*Box model stuff*/
-            width: 500px;
+            width: 100px;
             height: 300px;
-            max-height: 600px;
         }
         
         .words {
@@ -33,16 +32,15 @@
             /*Box model stuff*/
             margin: 20px;
             /*Manipulations stuff*/
-            animation: scroll 30s infinite;
+            animation: scroll 20s infinite;
         }
         
         span {
             /*Display stuff*/
             display: block;
             /*Box model stuff*/
-            min-width: 500px;
+            min-width: 200px;
             min-height: 40px;
-            margin: 5px;
             background: rgb(255, 255, 255);
             /*Typography stuff*/
             color: rgb(0, 0, 0);
@@ -50,11 +48,16 @@
         
         @keyframes scroll {
             0% {
-                top: -25%;
+                top: 50%;
             }
             100% {
-                top: -310%;
+                top: -600%;
             }
+        }
+        
+        .row {
+            width: 40%;
+            height: 300px;
         }
     </style>
 </head>
@@ -93,13 +96,21 @@
 
     <div class="scroll-bar">
         <div class="words">
-            <span>hello</span>
-            <span>hello</span>
-            <span>hello</span>
-            <span>hello</span>
-
+            <div class="row">
+                <span><img src="../Images/Back-up logo.PNG" alt=""></span> </div>
+            <div class="row">
+                <span><img src="../Images/Back-up logo.PNG" alt=""></span> </div>
+            <div class="row">
+                <span><img src="../Images/Back-up logo.PNG" alt=""></span> </div>
+            <div class="row">
+                <span><img src="../Images/Back-up logo.PNG" alt=""></span> </div>
+            <div class="row">
+                <span><img src="../Images/Back-up logo.PNG" alt=""></span> </div>
+            <div class="row">
+                <span><img src="../Images/Back-up logo.PNG" alt=""></span> </div>
         </div>
     </div>
+
 
 </body>
 

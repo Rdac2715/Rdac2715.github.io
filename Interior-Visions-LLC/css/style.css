@@ -13,3 +13,10 @@
 .navbar {
     margin-bottom: 10px;
 }
+
+h1 {
+    color: rgb(199, 13, 50);
+    font-family: elza-narrow, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}

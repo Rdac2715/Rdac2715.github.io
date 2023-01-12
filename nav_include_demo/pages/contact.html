@@ -15,30 +15,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lnk7rhg.css">
 
 </head>
 
 <body>
 
-    <nav>
-
-        <ul id="nav">
-
-            <li class="menu-item"><a href="index.html">Home</a></li>
-
-            <li class="menu-item"><a href="about.html">About</a></li>
-
-            <li class="menu-item"><a href="contact.html">Contact</a></li>
-
-        </ul>
-
-    </nav>
     <div w3-include-html="menu.html"></div>
 
     <div class="container">
 
-        <h1>Start my page now</h1>
 
+        <h2>Looking to contact me?</h2>
+        <p>Phone Number: 206-225-4146</p>
+        <p>Email: caffleck@eastsideprep.org</p>
+        <a href="mailto:caffleck@eastsideprep.org">Message Me In Outlook</a>
+        <p></p>
+        <a id="link" href="https://www.linkedin.com/in/cooperaffleck" target="_blank">LinkedIn Page</a>
+
+        <h3>Want to be a part of this imaginary mailing list?</h3>
+        <form>
+
+            <label for="fname">Name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="fname">Email</label><br>
+            <input type="text" id="email" name="email"><br>
+            <br>
+            <button onclick="myFunction3()">Submit</button>
+        </form>
     </div>
 
     <script>

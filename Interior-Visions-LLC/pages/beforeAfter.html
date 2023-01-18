@@ -33,10 +33,11 @@
             top: 0;
             /*Box model stuff*/
             /*Manipulations stuff*/
-            animation: scroll 60s infinite;
+            animation: scroll 120s infinite;
             width: 100%;
             margin-left: 1%;
             margin-right: 1%;
+            animation-timing-function: linear;
         }
         
         span {
@@ -53,12 +54,8 @@
                 top: -50%;
             }
             100% {
-                top: -250%;
+                top: -1100%;
             }
-        }
-        
-        .InsideContent {
-            display: inline-block;
         }
         
         .Before {
@@ -81,7 +78,7 @@
 <body style="overflow-y:auto">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        <a class="navbar-brand" href="index.html"><img src="../Images/Back-up-logo.PNG" style="height: 90px; width: 415px;"></a>
+        <a class="navbar-brand" href="index.html"><img src="../Images/Back-up-logo.PNG" style="max-height: 90px; max-width: 415px;"></a>
 
         <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -105,7 +102,7 @@
 
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item active">
 
                     <a class="nav-link" href="beforeAfter.html">Before & After</a>
 

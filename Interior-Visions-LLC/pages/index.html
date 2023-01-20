@@ -22,11 +22,22 @@
             padding: 10px;
         }
 
-        #process_link, #process_link a:hover {
+        button {
+            background-color: transparent;
+            color: black;
             border: double red 2px;
             border-radius: 5%;
             padding: 10px;
-            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(228, 228, 228);
+            color: white;
         }
 
         .jumbotron {
@@ -73,12 +84,13 @@
             <p style="text-align: left;">Interior Visions, LLC is an expert team of designers dedicated to bringing creative solutions to the residential and commercial market place. Our mission is to provide exceptional and exclusive design and value, drawing from the client’s lifestyle, to create interiors with function + style.</p>
             <p style="text-align: left;">We are a full-service interior design and remodeling firm that provides turnkey solutions from design to building a completed project for Bellevue and the surrounding areas.</p>
             <p style="text-align: left;">Whether you are looking for help with the interior design of your home or a commercial space, Interior Visions, LLC is the best choice for developing a creative and luxurious design for discerning home and business owners in the Belleuve area.</p>
-            <a id = "process_link" href = "process.html">Our Process</a>
+            <button style = "font-size:medium"><a href="process.html" style="text-decoration:none;">Our Process</a></button>
         </div>
         <div class = "col-md-5">
             <img src="../Images/homeImage.jpg" alt = "Design Example" style="width: 100%;">
         </div>
     </div>
+    <br>
     <div class = "row justify-content-md-center" style="text-align: center;">
         <div class="col-md-6">
             <div class="jumbotron">
@@ -88,7 +100,7 @@
         </div>
         <div class="col-md-6">
             <div class="jumbotron" style="text-align: center;">
-                <h1>The Affect of Design</h1>
+                <h1>The Effect of Design</h1>
                 <p>The spaces we live and work in give our lives meaning. They shape the narratives of our experience and provide settings for the important moments spent with friends, family, and colleagues. Exciting and dynamic design stimulates creativity and energy. It’s no surprise that good interior design can have a dramatic impact on everyday mood, health, well-being and functionality. Conversely, a cluttered home design or work space can cause stress, anxiety, apathy and even depression. Investing in a transformation of your space won’t just add value to your home or business, it will also impact your life in a positive way.</p>
             </div>
         </div>

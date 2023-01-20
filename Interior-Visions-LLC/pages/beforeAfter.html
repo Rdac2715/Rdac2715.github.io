@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" />
+    <link rel="icon" type="image/x-icon" href="../Images/browse_icon.JPG">
 
     <link rel="stylesheet" href="../css/style.css" />
     <script href="../js/script.js"></script>
@@ -38,6 +39,11 @@
             margin-left: 1%;
             margin-right: 1%;
             animation-timing-function: linear;
+            animation-play-state: running;
+        }
+        
+        .words:hover {
+            animation-play-state: paused;
         }
         
         span {
@@ -75,6 +81,25 @@
             height: auto;
             width: auto;
         }
+        
+        .contact_link {
+            background-color: transparent;
+            color: black;
+            margin: 30px;
+            border: double red 2px;
+            border-radius: 5%;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+        
+        .contact_link:hover {
+            background-color: rgb(228, 228, 228);
+            color: white;
+        }
     </style>
 </head>
 
@@ -90,7 +115,6 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
-
                 </li>
 
                 <li class="nav-item">
@@ -117,25 +141,24 @@
     <h2 style="text-align: center">What is your dream design?</h2>
     <br />
     <h3 style="text-align: center">Here are some of ours:</h3>
-    <br />
-    <br />
-    <h4 style="margin-left: 2%">Mission Statement</h4>
-    <p style="margin-left: 1%; margin-right: 1%">
-        While our experienced designers have their own styles and preferences built over combined decades spent in the industry, we don’t believe in a one-size-fits-all approach. Rather, we take into account that every home or business is different and requires
-        its own customized design that combines the needs and wishes of the client paired with functional and beautiful design solutions. We believe in simplifying spaces with clean lines, open space and a minimalist approach, showcasing the natural beauty
-        of the materials and finishes. Some of the principles and concepts we consider when providing you with a unique design are: The architectural style of your home and its interiors and how we can enhance its function + style, the size of the space,
-        the current layout and how it is works to meet your needs. We also seek to create in every project a strong balance that contrasts and emphasises your needs through architectural features and design elements. Which includes things such as evaluating
-        the natural light that the space has and how our lighting design solutions can shape the feel of that space, layering the light sources enhances the design and functionality of the home or business, using color theory to create a specific effect
-        designed to meet the needs and design intent of the living or working space and finally proper use of textures, finishes, and materials that reflect the desired design solution.
-    </p>
-
+    <div class="container">
+        <!--div's up above that affect animation and positioning are here-->
+        <h4 style="margin-left: 5%">Mission Statement</h4>
+        <p style="margin-left: 5%; margin-right: 5%;">
+            While our experienced designers have their own styles and preferences built over combined decades spent in the industry, we don’t believe in a one-size-fits-all approach. Rather, we take into account that every home or business is different and requires
+            its own customized design that combines the needs and wishes of the client paired with functional and beautiful design solutions. We believe in simplifying spaces with clean lines, open space and a minimalist approach, showcasing the natural
+            beauty of the materials and finishes. Some of the principles and concepts we consider when providing you with a unique design are: The architectural style of your home and its interiors and how we can enhance its function + style, the size
+            of the space, the current layout and how it is works to meet your needs. We also seek to create in every project a strong balance that contrasts and emphasises your needs through architectural features and design elements. Which includes things
+            such as evaluating the natural light that the space has and how our lighting design solutions can shape the feel of that space, layering the light sources enhances the design and functionality of the home or business, using color theory to
+            create a specific effect designed to meet the needs and design intent of the living or working space and finally proper use of textures, finishes, and materials that reflect the desired design solution.
+        </p>
+    </div>
     <h4 style="margin-left: 42%; margin-right: 38%">Before & After</h4>
-    <!--div's up above that affect animation and positioning are here-->
     <div class="scroll-bar">
         <!--div class words is refering to all content shown within the span elements-->
         <div class="words">
             <div class="Before">
-                <!--Ln 139 - 383 are all the span elements and their contained content-->
+                <!--Ln 136 - 380 are all the span elements and their contained content-->
                 <span><img
               style="
                 width: 100%;
@@ -268,7 +291,7 @@
               "
               src="../Images/After-1.PNG"
               alt=""
-              /></span>
+          /></span>
 
                 <span><img
               style="

@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" />
-    <link rel="icon" type="image/x-icon" href="../Images/browse_icon.JPG">
+    <link rel="icon" type="image/x-icon" href="../Images/browse_icon.JPG" />
 
     <link rel="stylesheet" href="../css/style.css" />
     <script href="../js/script.js"></script>
@@ -23,7 +23,7 @@
             overflow-y: visible;
             /*Box shape*/
             width: 100%;
-            height: 560px;
+            height: 460px;
             position: relative;
             overflow: hidden;
         }
@@ -33,7 +33,7 @@
             position: absolute;
             top: 0;
             /*Box model stuff*/
-            /*Manipulations stuff*/
+            /*Animation*/
             animation: scroll 120s infinite;
             width: 100%;
             margin-left: 1%;
@@ -41,6 +41,7 @@
             animation-timing-function: linear;
             animation-play-state: running;
         }
+        /* Pauses the animation on hover */
         
         .words:hover {
             animation-play-state: paused;
@@ -81,6 +82,7 @@
             height: auto;
             width: auto;
         }
+        /* modifications to links */
         
         .contact_link {
             background-color: transparent;
@@ -95,6 +97,7 @@
             transition-duration: 0.5s;
             cursor: pointer;
         }
+        /* more modifications to links */
         
         .contact_link:hover {
             background-color: rgb(228, 228, 228);
@@ -106,7 +109,7 @@
 <body style="overflow-y: auto">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html"><img src="../Images/Back-up-logo.PNG" style="max-height: 90px; max-width: 415px" /></a>
-        <!--Ln 84-113 is navigation-->
+        <!--Ln 110-142 is navigation-->
         <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -144,7 +147,7 @@
     <div class="container">
         <!--div's up above that affect animation and positioning are here-->
         <h4 style="margin-left: 5%">Mission Statement</h4>
-        <p style="margin-left: 5%; margin-right: 5%;">
+        <p style="margin-left: 5%; margin-right: 5%">
             While our experienced designers have their own styles and preferences built over combined decades spent in the industry, we don’t believe in a one-size-fits-all approach. Rather, we take into account that every home or business is different and requires
             its own customized design that combines the needs and wishes of the client paired with functional and beautiful design solutions. We believe in simplifying spaces with clean lines, open space and a minimalist approach, showcasing the natural
             beauty of the materials and finishes. Some of the principles and concepts we consider when providing you with a unique design are: The architectural style of your home and its interiors and how we can enhance its function + style, the size
@@ -158,7 +161,7 @@
         <!--div class words is refering to all content shown within the span elements-->
         <div class="words">
             <div class="Before">
-                <!--Ln 136 - 380 are all the span elements and their contained content-->
+                <!--Ln 162 - 409 are all the span elements and their contained content-->
                 <span><img
               style="
                 width: 100%;
@@ -405,6 +408,27 @@
             </div>
         </div>
     </div>
+    <footer class="page-footer bg-dark" style="text-align: center">
+
+      <div>
+
+          <p>COPYRIGHT 2023 FABIAN BORRE | INTERIOR VISIONS</p>
+
+          <a href="https://twitter.com/FabianBorre" target="_blank"><img src="../Images/twitter.png" alt="Twitter" style="width: 2%; margin: 0 5px;"></a>
+
+          <a href="https://www.facebook.com/InteriorVisionsLLC/posts/5115426815193952" target="_blank"><img src="../Images/facebook.png" alt="Facebook" style="width: 3%; margin: 0 5px;"></a>
+
+          <a href="https://www.instagram.com/interiorvisions_fabianborre/" target="_blank"><img src="../Images/instagram.png" alt="Instagram" style="width: 2%; margin: 0 5px;"></a>
+
+          <a href="https://www.pinterest.com/fabianborre/" target="_blank"><img src="../Images/pinterest.png" alt="Pinterest" style="width: 2%; margin: 0 5px;"></a>
+
+          <a href="https://www.linkedin.com/in/fabianborre/" target="_blank"><img src="../Images/linkedin.png" alt="LinkedIn" style="width: 2%; margin: 0 5px;"></a>
+
+          <br>
+
+      </div>
+
+  </footer>
 </body>
 
 </html>

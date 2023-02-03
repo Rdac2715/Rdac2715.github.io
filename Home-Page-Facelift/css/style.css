@@ -286,3 +286,7 @@ html {
 .left {
     padding-left: 50px;
 }
+
+body::-webkit-scrollbar{
+    display: none;
+  }

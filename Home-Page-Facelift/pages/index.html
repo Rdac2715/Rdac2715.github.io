@@ -1,13 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LastPass</title>
     <link rel="icon" type="image/x-icon" href="../images/lastpass-logo.png">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lnk7rhg.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            padding: 20px;
+            font-family: dair, serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .grid-item {
+            text-align: left;
+            font-size: 20px;
+        }
+        
+        .main1 {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+        }
+        
+        .image1 {
+            grid-column: 4 / span 1;
+            grid-row: 1;
+        }
+        
+        .image2 {
+            grid-column: 1 / span 5;
+            grid-row: 2;
+        }
+        
+        .main2 {
+            grid-column: 2 / span 3;
+            grid-row: 3;
+        }
+        
+        .image3 {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+        
+        .main3 {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        
+        .main4 {
+            grid-column: 3 / span 2;
+            grid-row: 5;
+        }
+        
+        .image4 {
+            grid-column: 4 / span 1;
+            grid-row: 2;
+        }
+        
+        .image6 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+        }
+        
+        .main5 {
+            grid-column: 1 / span 1;
+            grid-row: 6;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .mySlides2 {
+            display: active;
+            font-size: 40px;
+        }
+        
+        .w3-left,
+        .w3-right,
+        .w3-badge {
+            cursor: pointer
+        }
+        
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
+        
+        * h1 {
+            font-family: dair, serif;
+        }
+        
+        * h2 {
+            font-family: dair, serif;
+        }
+        
+        * p {
+            font-family: dair, serif;
+        }
+        
+        * title {
+            font-family: dair, serif;
+        }
+        
+        * h3 {
+            font-family: dair, serif;
+        }
+        
+        * h4 {
+            font-family: dair, serif;
+        }
+        
+        * h5 {
+            font-family: dair, serif;
+        }
+        
+        * h6 {
+            font-family: dair, serif;
+        }
+        
+        * footer {
+            font-family: dair, serif;
+        }
+        
+        * body {
+            font-family: dair, serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body style="background-color:rgb(255, 224, 173); font-family: dair, serif;">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#">Our Mission</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Personal
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Premium</a>
+                <a href="#">Family Sharing</a>
+                <a href="#">Safety</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+
+
+        <a href="#">Our History</a>
+        <div class="navbar2">
+            <div class="dropdown2">
+                <button class="dropbtn2" onclick="myFunction2()">Business
+            <i class="fa fa-caret-down"></i>
+          </button>
+                <div class="dropdown-content2" id="myDropdown2">
+                    <a href="#">Teams</a>
+                    <a href="#">Business</a>
+                    <a href="#">enterprise</a>
+                    <a href="#">Multi-Factor Authentication</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <h1 style="font-size: 60px; font-family: dair;">LastPass </h1>
+    </div>
+    <h2 style="text-align: center;">Password Management from Anywhere</h2>
+    <div class="center">
+        <p style="font-size: 20px; font-family: dair;">Life is happening online. Work. Play. Family and friends. LastPass puts your digital life at your fingertips, simply and securely. </p>
+        <p style="font-size: 20px; font-family: dair;"> Join now!</p>
+    </div>
+
+    <h3 style="text-align: center;">Don't know where to start? Click one of the buttons above!</h3>
+    <div class="grid-container">
+        <div class="grid-item main1">
+            <h1 style="color: green;">About us</h1>
+            <br>
+            <p>We are a youth-led organization dedicated to protecting ecosystems by working with students throughout the world to ecolearn and rebuild ecosystems. With our collective knowledge, we can protect the Earth for generations to come.</p>
+        </div>
+        <div class="grid-item image1">
+            <img style="padding-right: 20px;" src="../images/logo-1.svg" alt="Logo" width="400px" height="330px">
+        </div>
+        <div class="grid-item image2">
+            <img style="float: left;" src="../images/logo-2.svg" alt="Logo" width="400px" height="330px">
+        </div>
+
+        <div class="grid-item main2">
+            <h1 style="color: orange;">Our Team</h1>
+            <br>
+            <p>Our team consists of young students wanting to make a difference in our world. Our founders are from Kirkland, Washington and are high schoolers. Look below to learn more about us and how it all came together.</p>
+
+        </div>
+
+        <div class="grid-item image3">
+            <img src="../images/logo3.png" alt="logo3" width="200px" height="300px">
+        </div>
+        <div class="grid-item main3">
+
+            <h1 style="color: green;">Resources</h1>
+            <br>
+            <p>Impact your community and make a local difference. Chapters are a great way to make sure YOUR ecosystems are protected. Starting a chapter is similar to starting your own organization, and you get to decide what YOU want to do. You also get
+                volunteer hours!
+            </p>
+            <br>
+            <p> Through the chapter system, you get to brainstorm and host your own events, local biodiversity restorations, working with legislators, and working with youth at schools. You also can also plan things such as newsletters and more. It's all
+                up to you. Create your own chapter or join one, its easy! View more down below.</p>
+
+
+        </div>
+        <div class="grid-item image5">
+            <img src="../images/logo4.png" alt="logo3" width="300px" height="300px">
+        </div>
+        <div class="grid-item main4">
+            <h1 style="color: orange;">Videos</h1>
+            <br> Learning about Ecosystems is key to protecting them. That's why we spread education while rebuilding through our events.
+
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1pFCIPK4jcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k0ULFHYumzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NUgjp4Ek6D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zGkeXuY57oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hnydUunWIVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qzVA_G1BPa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UgwXUPnwWZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MBwgfUdDZCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x7_Xg7bKdn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pNa19YrENzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            <div class="mySlides">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2IG0PZw8-Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+
+        </div>
+        <div class="image6">
+            <img src="../images/photo3.png" alt="logo5" width="500px" height="400px">
+        </div>
+    </div>
+
+    <div class="grid-item main5">
+        <h1 style="color: green; padding-left: 250px;">Images</h1>
+        <div style="padding-left: 80px;" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div style="padding-right: 750px;" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <br>
+        <br>
+
+        <div class="img">
+            <div class="w3-container">
+                <div class="w3-content w3-display-container">
+                    <div class="mySlides2">
+                        <figcaption>Trash 1</figcaption>
+                        <img style="height: 500px;" src="../images/Capture1.PNG" alt="Trash 1" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Trash 2</figcaption>
+                        <img style="height: 500px;" src="../images/Capture2.PNG" alt="Trash 2" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Trash 3</figcaption>
+                        <img style="height: 500px;" src="../images/Capture3.PNG" alt="Trash 3" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Forests</figcaption>
+                        <img style="height: 500px;" src="../images/Capture4.PNG" alt="Forests" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Mountains</figcaption>
+                        <img style="height: 500px;" src="../images/Capture5.PNG" alt="Mountains" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Stream</figcaption>
+                        <img style="height: 500px;" src="../images/Capture6.PNG" alt="Stream" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Drought</figcaption>
+                        <img style="height: 500px;" src="../images/Capture7.PNG" alt="Drought" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Picking Up Trash</figcaption>
+                        <img style="height: 500px;" src="../images/Capture8.PNG" alt="Picking Up Trash" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Picking Up Trash 2</figcaption>
+                        <img style="height: 500px;" src="../images/Capture9.PNG" alt="Picking Up Trash 2" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Earth Day</figcaption>
+                        <img style="height: 500px;" src="../images/Capture10.PNG" alt="Earth Day" class="d-block w-100">
+                    </div>
+                    <div class="mySlides2">
+                        <figcaption>Snake</figcaption>
+                        <img style="height: 500px;" src="../images/Capture11.PNG" alt="Snake" class="d-block w-100">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn2')) {
+                var myDropdown = document.getElementById("myDropdown2");
+                if (myDropdown.classList.contains('show2')) {
+                    myDropdown.classList.remove('show2');
+                }
+            }
+        }
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+    <br>
+    <footer>
+        <ul>EcoLearning Together.</ul>
+        <ul>EcoLearning Together is a 501c3 tax-exempt organization with the EIN of 87-2969633.</ul>
+    </footer>
 </body>
+
 </html>
+ 

@@ -17,13 +17,17 @@ body {
 }
 
 .nav {
-    height: 120px;
-    background-color: black;
-    color: white;
+/*Display stuff*/
     display: flex;
     align-items: center;
+/*Positioning stuff*/
     position: sticky;
     top: -30px;
+/*Box model stuff*/
+    height: 120px;
+    background-color: black;
+/*Typography stuff*/
+    color: white;
 }
 
 .nav-inner {

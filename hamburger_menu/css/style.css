@@ -1,217 +1,259 @@
-*{
-    box-sizing: border-box;
+* {
+  /*Miscellaneous*/
+  box-sizing: border-box;
 }
 
-
+.header {
+  /*Box model stuff*/
+  padding: 20px;
+  background-color: darkgrey;
+  /*Typography stuff*/
+  text-align: center;
+  color: wheat;
+}
 
 body {
-    color: goldenrod;
-    background-color: rgb(236, 186, 155);
-    font-family: monospace;
-    font-size: 1.2em;
+  /*Box model stuff*/
+  background-color: rgb(236, 186, 155);
+  /*Typography stuff*/
+  font-family: monospace;
+  font-size: 1.2em;
+  color: goldenrod;
+  /*Miscellaneous*/
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-.header {
-    background-color: darkgrey;
-    color: wheat;
-    text-align: center;
-    padding: 20px;
-}
-
 .nav {
-    height: 120px;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: -30px;
+  /*Display stuff*/
+  display: flex;
+  align-items: center;
+  /*Positioning stuff*/
+  position: sticky;
+  top: -30px;
+  /*Box model stuff*/
+  height: 120px;
+  background-color: black;
+  /*Typography stuff*/
+  color: white;
 }
 
 .nav-inner {
-    float: left;
-    width: 100%;
-    position: sticky;
-    top: 0;
+  /*Positioning stuff*/
+  position: sticky;
+  top: 0;
+  /*Box model stuff*/
+  width: 100%;
+  /*Miscellaneous*/
+  float: left;
 }
 
-.logo{ 
-    float: left;
-    width: 30%;
-    padding: 40px;
-    margin-top: -10px;
+.logo {
+  /*Box model stuff*/
+  width: 30%;
+  margin-top: -10px;
+  padding: 40px;
+  /*Miscellaneous*/
+  float: left;
 }
 
 .logo p {
-    margin: 0;
-    font-family: "coolvetica", sans-serif;
-font-weight: 400;
-font-style: italic;
+  /*Box model stuff*/
+  margin: 0;
+  /*Typography stuff*/
+  font-family: "coolvetica", sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .left {
-    float: left;
-    width: 20%;
+  /*Box model stuff*/
+  width: 20%;
+  /*Miscellaneous*/
+  float: left;
 }
 
 nav {
-    float: left;
-    width: 70%;
-    text-align: right;
-    padding: 40px;
-    padding-top: 60px;
+  /*Box model stuff*/
+  width: 70%;
+  padding: 40px;
+  padding-top: 60px;
+  /*Typography stuff*/
+  text-align: right;
+  /*Miscellaneous*/
+  float: left;
 }
 
 nav a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: white;
-    font-family: "belda-condensed", sans-serif;
-font-weight: 700;
-font-style: normal;
+  /*Box model stuff*/
+  margin-left: 10px;
+  /*Typography stuff*/
+  font-family: "belda-condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
 }
 
 .nav-left a {
-    background-color: darkgrey;
-    color: wheat;
-    text-decoration: none;
-    display: block;
-    padding: 8px;
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
+  /*Display stuff*/
+  display: block;
+  /*Box model stuff*/
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: darkgrey;
+  /*Typography stuff*/
+  text-align: center;
+  text-decoration: none;
+  color: wheat;
 }
 
 .main {
-    float: left;
-    width: 60%;
-    padding: 0 20px;
+  /*Box model stuff*/
+  width: 60%;
+  padding: 0 20px;
+  /*Miscellaneous*/
+  float: left;
 }
 
 .right {
-    float: left;
-    width: 20%;
-    background-color: darkgrey;
-    color: wheat;
-    padding: 15px;
-    margin: 10px 0;
+  /*Box model stuff*/
+  width: 20%;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: darkgrey;
+  /*Typography stuff*/
+  color: wheat;
+  /*Miscellaneous*/
+  float: left;
 }
 
 .footer {
-    background-color: darkgray;
-    color: wheat;
-    padding: 10px;
-    clear: both;
-    margin-top: 10px;
+  /*Box model stuff*/
+  margin-top: 10px;
+  padding: 10px;
+  background-color: darkgray;
+  /*Typography stuff*/
+  color: wheat;
+  /*Miscellaneous*/
+  clear: both;
 }
 
 footer {
-    width: 60%;
-    margin: 0 auto;
+  /*Box model stuff*/
+  width: 60%;
+  margin: 0 auto;
 }
 
 h1 {
-    font-weight: 900;
+  /*Typography stuff*/
+  font-weight: 900;
 }
 
 p {
-    font-size: 400;
+  /*Typography stuff*/
+  font-size: 400;
 }
 
 @media (min-width: 621px) and (max-width: 1000px) {
-    .main {
-        width: 80%;
-    }
-    .right {
-        width: 100%;
-    }
-    
-    p {
-        font-size: 700;
-    }
+  .main {
+    width: 80%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  p {
+    font-size: 700;
+  }
 }
 
 @media only screen and (max-width: 620px) {
-    .left, .main, .right {
-        width: 100%;
-    }
+  .left,
+  .main,
+  .right {
+    width: 100%;
+  }
 }
 
 .box::before {
-    /*Display stuff*/
-    content: '';
-    /*Positioning stuff*/
-    position: absolute;
-    /*Box model stuff*/
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#00ccff, #d50);
-    /*Manipulations stuff*/
-    animation-delay: 0s;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-name: rotate;
-    animation-timing-function: linear;
-    animation-play-state: running;
+  /*Display stuff*/
+  content: "";
+  /*Positioning stuff*/
+  position: absolute;
+  /*Box model stuff*/
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00ccff, #d50);
+  /*animation stuff*/
+  animation-delay: 0s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-play-state: running;
 }
 
 .box::after {
-    /*Display stuff*/
-    content: '';
-    /*Positioning stuff*/
-    position: absolute;
-    /*Box model stuff*/
-    border-radius: 16px;
-    background-color: #0e1538;
-    /*Miscellaneous*/
-    inset: 5px;
+  content: "";
+  position: absolute;
+  border-radius: 16px;
+  background-color: #0e1538;
+  inset: 5px;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(90deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(270deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
-
 
 .box {
-    /*Display stuff*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*Positioning stuff*/
-    position: relative;
-    /*Box model stuff*/
-    width: 100%;
-    height: auto;
-    margin: 0px 30px 0px;
-    border-radius: 100px;
-    background-color: rgba(0, 0, 0, 5);
-    /*Miscellaneous*/
-    -ms-align-items: center;
-    overflow: hidden;
+  /*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Positioning stuff*/
+  position: relative;
+  /*Box model stuff*/
+  width: 100%;
+  height: auto;
+  margin: 0px 30px 0px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 5);
+  /*Miscellaneous*/
+  -ms-align-items: center;
+  overflow: hidden;
 }
 
-*, *:before, *:after 
-{ box-sizing: border-box; }
+/* everything below this is from https://alvarotrigo.com/blog/hamburger-menu-css/--> */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
-html { font-size: 18px; }
+html {
+  font-size: 18px;
+}
 
 label .menu {
   position: absolute;
@@ -222,11 +264,10 @@ label .menu {
   height: 200px;
   background: #ff0000;
   border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   cursor: pointer;
-  
 }
 
 label .hamburger {
@@ -235,17 +276,18 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #69D2e7;
+  background: #69d2e7;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+label .hamburger:after,
+label .hamburger:before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   content: "";
   position: absolute;
   display: block;
@@ -254,39 +296,43 @@ label .hamburger:after, label .hamburger:before {
   background: #69d2e7;
 }
 
-label .hamburger:before { top: -10px; }
+label .hamburger:before {
+  top: -10px;
+}
 
-label .hamburger:after { bottom: -10px; }
+label .hamburger:after {
+  bottom: -10px;
+}
 
-label input { display: none; }
+label input {
+  display: none;
+}
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
   border-radius: 0;
-  
 }
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  
 }
 
 label input:checked + .menu .hamburger:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
-  
 }
 
 label input:checked + .menu .hamburger:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
-  
 }
 
-label input:checked + .menu + ul { opacity: 1; }
+label input:checked + .menu + ul {
+  opacity: 1;
+}
 
 label ul {
   z-index: 200;
@@ -296,8 +342,8 @@ label ul {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-transition: .25s 0s ease-in-out;
-  transition: .25s 0s ease-in-out;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
 }
 
 label a {
@@ -305,7 +351,6 @@ label a {
   display: block;
   color: #f38630;
   text-decoration: none;
-  
 }
 
 h1 {

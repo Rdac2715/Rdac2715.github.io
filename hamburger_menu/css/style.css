@@ -110,10 +110,10 @@ nav a {
 }
 
 .main {
-  /*Box model stuff*/
+/*Box model stuff*/
   width: 60%;
   padding: 0 20px;
-  /*Miscellaneous*/
+/*Miscellaneous*/
   float: left;
 }
 

@@ -1,0 +1,17 @@
+body {
+
+    padding-left: 50px;
+}
+
+button {
+    margin-top: 200px;
+    margin-left: 80px;
+    translate: -100px;
+    float: left;
+    float: inline-start;
+}
+
+img{
+    max-width: 300px;
+    max-height: 300px;
+}

@@ -5,37 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio | Cooper Affleck</title>
-    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+     img {
+    width: 33%;
+    border: 2px;
+    border-color: black;
+    transition: transform 1s;
+    max-height: 225px;
+  }
+
+  img:hover {
+  transform: scale(1.2);
+  }
+
+  </style>
 </head>
 <body>
 
 <div class="grid-container">
+
+    <div class="grid-item title">
+        <h1>Cooper Affleck</h1>
+    </div>
 <div class="grid-item navigation">
 <nav>
-    <label>
-        <input type="checkbox" />
-        <span class="menu"> <span class="hamburger"></span> </span>
-        <ul><a href="index.html" class="">Home</a>
-            <a href="before_after.html" class="">Before and After</a>
-            <a href="contact.html" class="">Contact</a>
-            <a href="current_works.html" class="">Current Works</a>
-            <a href="portfolio.html" class="">Porfolio</a>
-            <a href="about.html" class="">About Me</a></ul>
-            </label>
-            
-</nav>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="before_after.html">Before and After</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="current_works.html">Current Works</a></li>
+    <li><a href="about.html">About Cooper</a></li>
+  <!--  <li><a href="index.html">Home</a></li> -->
+    </nav> 
 </div>
 
+    <div class="grid-item photo"><img src="../images/Photograph.jpg" alt="photo1"><img src="../images/artproject.png" alt="photo2"><img src="../images/WebDesign.PNG" alt="photo3"><br><br></div>
+    <div class="grid-item textanalysis">
+            <div id="textbox1">
+                <h3>Photography</h3>
+<p>One of my favorite skills / hobbies is photography, I only really started taking an interest in photography about a year ago which led to a spark of inspiration, as I decided to take Digital Photography back in Fall which led me to take the photo above.</p>
 </div>
-<h1>Plans:</h1>
-<ul>
-    <li>Set Up unviersal nav</li>
-    <li>add text and images</li>
-    <li>bug fixing</li>
-    <li>etc.</li>
-    <li></li>
-
-</ul>
+<div id="textbox2">
+    <h3>Art</h3>
+    <p>I also have an appreciation for art, specically three dimesnional digital art as shown in something I created recently above. I have always been fond of liminal space art and as such I practice it when I can.</p>
+</div>
+<div id="textbox3">
+    <h3>Web Design</h3>
+    <p>I have been coding for a few years now but I only started getting into it with web page development. Something about HTML and CSS just clicked like never before. Just as in life, there are plently of difficulties that come from web design but when I put my all into a project. I just know it will be perfect.</p>
+    </div>    
+</div>
+</div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 li {
     display: inline;
-    padding: 150px;
+    padding: 100px;
 
 }
 
@@ -71,3 +71,13 @@ body {
     place-content: center;
     background: #E0E4CC;
 }
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+   opacity: 0;
+   transition: 2s all ease;
+   }
+   .active{
+   transform: translateY(0);
+   opacity: 1;
+   }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooper Affleck | Building a classmates demo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="container one reveal fade-left">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure omnis dolores nihil numquam nulla totam laborum porro nobis soluta necessitatibus unde enim mollitia labore eligendi, accusantium at. Sequi placeat, autem quas voluptatibus nulla necessitatibus reiciendis dolorem, optio incidunt ea neque minima iure quos vitae odio facere sed dignissimos nostrum! Ut porro laudantium accusantium, debitis dolorem tenetur iure temporibus! Eos nihil tempore impedit voluptas similique nostrum officiis dolores, aperiam minus cupiditate, dolorum rerum quas dicta tempora magnam mollitia aut dolorem, commodi esse atque culpa! Hic dolores libero et? Tempora labore ad, esse illo laudantium perspiciatis doloremque consectetur facilis magni, nisi veritatis.    </div>
+
+</body>
+<script>   
+function reveal() {
+var reveals = document.getElementsByClassName("reveal");
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+if (elementTop < windowHeight - elementVisible) {
+ reveals[i].classList.add("active");
+}
+}
+}
+window.addEventListener("scroll", reveal);
+// To check the scroll position on page load
+reveal();
+        </script>
+</html>

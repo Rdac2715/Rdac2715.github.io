@@ -1,3 +1,7 @@
+.site-wrap {
+    overflow-x: hidden;
+position: relative;
+}
 
 .grid-container {
     display: grid;
@@ -6,7 +10,7 @@
 }
 
 .grid-item {
-    background-color: rgb(144, 150, 155);
+    background-color: rgb(156, 158, 159);
     padding: 22px;
     display: inline;
     color: #00140d;
@@ -61,23 +65,51 @@
 .aboutmephoto {
     grid-column: 1 / span 3;
     grid-row: 3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200%;
+    
+}
+
+.box {
+    position: absolute;
+    height: 240px;
+    animation-name: float;  
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes float {
+    from{ transform: translateX(-430px)}
+    to{ transform: translateX(-20px)}
+}
+
+.box img {
+    height: 240px;
+    width: auto;
+    margin-right: 100px;
 }
 
 .myhistory {
     grid-column: 1 / span 1;
-    grid-row: 4 / span 2;
+    grid-row: 5 / span 2;
     float: left;
 }
 
 .myaffiliations {
     grid-column: 2 / span 2;
-    grid-row: 4;
+    grid-row: 5;
     float: right;
 }
 
 .mediums {
     grid-column: 2 / span 2;
-    grid-row: 5;
+    grid-row: 6;
     float: right;
 }
 
@@ -129,3 +161,4 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
     font-size: 30px;
 }
+

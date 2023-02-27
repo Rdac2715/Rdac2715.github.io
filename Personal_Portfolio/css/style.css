@@ -1,16 +1,17 @@
 .site-wrap {
     overflow-x: hidden;
+    grid-template-columns: auto auto auto;
 position: relative;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    
     grid-gap: 0px;
 }
 
 .grid-item {
-    background-color: rgb(156, 158, 159);
+    background-color: rgb(193, 195, 196);
     padding: 22px;
     display: inline;
     color: #00140d;
@@ -75,17 +76,17 @@ position: relative;
     position: absolute;
     height: 240px;
     animation-name: float;  
-    animation-duration: 15s;
+    animation-duration: 30s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: reverse;
     animation-timing-function: linear;
 }
 
 
 
 @keyframes float {
-    from{ transform: translateX(-430px)}
+    from{ transform: translateX(-2025px)}
     to{ transform: translateX(-20px)}
 }
 
@@ -162,3 +163,94 @@ h3 {
     font-size: 30px;
 }
 
+.lefty
+ {
+    float: left;
+    width: 40%;
+    background-color: rgb(193, 195, 196);
+    padding-left: 10%;
+
+ }
+.righty {
+    float: right;
+    width: 40%;
+    background-color: rgb(193, 195, 196);
+    padding-left: 10%;
+
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  

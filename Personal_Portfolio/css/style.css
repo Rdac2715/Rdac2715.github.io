@@ -142,7 +142,10 @@ h1 {
   }
 
   a:hover {
-    color: #35605a;
+    color: #35605a !important;
+  }
+  a:visited {
+    color: #00000000;
   }
 
   body {

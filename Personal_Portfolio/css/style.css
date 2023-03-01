@@ -179,22 +179,21 @@ h3 {
 
 }
 
-.footer {
+footer {
     position: relative;
     width: 100%;
-    background: #2257a7;
+    background: #deaa88;
     min-height: 100px;
-    padding: 20px 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    column-gap: 40px;
+
+    
   }
 
-  .footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
+   footer ul {
+    column-count: 4;
+    text-align: right;
+    column-gap: 40px;
+    float: right;
   }
   

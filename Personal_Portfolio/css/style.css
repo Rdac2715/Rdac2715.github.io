@@ -193,10 +193,3 @@ footer {
     
   }
 
-   footer ul {
-    column-count: 4;
-    text-align: right;
-    column-gap: 40px;
-    float: right;
-  }
-  

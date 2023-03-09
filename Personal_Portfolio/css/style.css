@@ -182,10 +182,52 @@ h3 {
     grid-row: 3;
 }
 
-.previouswork {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-}
+.parallax1 {
+    background-image: url(https://rdac2715.github.io/Interior-Visions-LLC/pages/index.html);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    background-image: url(https://rdac2715.github.io/Show-Me-What-You-Know/pages/index.html);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    background-image: url(https://rdac2715.github.io/Themed-Webpage/);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax4 {
+    background-image: url(https://rdac2715.github.io/Build_A_Classmates_Demo/pages/);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .parallax5 {
+    background-image: url(https://rdac2715.github.io/OLD/EcoLearners/pages/);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
 
 /* Everything relating to the footer was taken from https://csshint.com/html-css-footer-design/*/
 .footer-distributed{

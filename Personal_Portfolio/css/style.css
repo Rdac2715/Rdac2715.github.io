@@ -10,6 +10,12 @@ position: relative;
     grid-gap: 0px;
 }
 
+p, a, b, li, form {
+  font-family: "elza-narrow", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+
 .grid-item {
     background-color: rgb(193, 195, 196);
     padding: 22px;
@@ -160,17 +166,25 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
     color: #35605a;
+    font-family: "elza-narrow", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 h3 {
     font-size: 30px;
 }
 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+}
 .lefty
  {
     float: left;
     background-color: rgb(193, 195, 196);
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 1;
     grid-row: 3;
     float: right;
 
@@ -183,51 +197,81 @@ h3 {
 }
 
 .parallax1 {
-    background-image: url(https://rdac2715.github.io/Interior-Visions-LLC/pages/index.html);
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-image: url("../images/previous1.PNG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 50px;
+  background-color: #5383d3;
+}
 
-  .parallax2 {
-    background-image: url(https://rdac2715.github.io/Show-Me-What-You-Know/pages/index.html);
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.parallax2 {
+  background-image: url("../images/previous2.PNG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: white;
+}
 
-  .parallax3 {
-    background-image: url(https://rdac2715.github.io/Themed-Webpage/);
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.parallax3 {
+  background-image: url("../images/previous3.PNG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: white;
+}
 
-  .parallax4 {
-    background-image: url(https://rdac2715.github.io/Build_A_Classmates_Demo/pages/);
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.parallax4 {
+  background-image: url("../images/previous4.PNG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: white;
+}
 
+.parallax5 {
+  background-image: url("../images/previous5.PNG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: white;
+}
 
-  .parallax5 {
-    background-image: url(https://rdac2715.github.io/OLD/EcoLearners/pages/);
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+.dropper {
+  grid-column: 1 / span 3;
+    grid-row: 2 / span 5;
+}
 
 /* Everything relating to the footer was taken from https://csshint.com/html-css-footer-design/*/
 .footer-distributed{

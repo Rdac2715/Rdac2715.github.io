@@ -23,6 +23,10 @@ font-style: normal;
     color: #00140d;
 }
 
+.lefty li {
+  padding-bottom: 8px;
+}
+
 .title {
     text-decoration: none;
     grid-column: 1 / span 1;
@@ -268,6 +272,32 @@ input[type=text] {
   background-color: white;
 }
 
+.parallax6 {
+  background-image: url("../images/Before.PNG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: white;
+}
+  .parallax7 {
+    background-image: url("../images/Inbetween.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: white;
+  }
 .dropper {
   grid-column: 1 / span 3;
     grid-row: 2 / span 5;

@@ -303,6 +303,36 @@ input[type=text] {
     grid-row: 2 / span 5;
 }
 
+.pricingleft1 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.pricingleft2 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.pricingleft3 {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.pricingright1 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.pricingright2 {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.pricingright3 {
+  grid-column: 2 / span 2;
+  grid-row: 4 / span 1;
+}
+
 /* Everything relating to the footer was taken from https://csshint.com/html-css-footer-design/*/
 .footer-distributed{
 	background: #444;
